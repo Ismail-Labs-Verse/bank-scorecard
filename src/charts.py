@@ -49,6 +49,8 @@ plt.rcParams.update({
     "xtick.color": "#5A6473",
     "ytick.color": "#5A6473",
     "axes.grid": True,
+    "axes.grid.axis": "y",        # faint horizontal rules only; vertical gridlines
+                                   # add ink without adding information
     "grid.color": "#E4E7EC",
     "grid.linewidth": 0.7,
     "axes.spines.top": False,
@@ -75,7 +77,7 @@ DPI = 300          # print quality: the figures are embedded in the PDFs and the
 
 #: The HDFC merger completed on 1 July 2023, which falls inside FY2024.
 MERGER_YEAR = "FY2024"
-MERGER_LABEL = "HDFC merger\n1 Jul 2023"
+MERGER_LABEL = "HDFC Merger (July 2023)"
 
 PRELIMINARY_STAMP = "PRELIMINARY - UNVERIFIED EXTRACTION"
 TRUSTED_STATUSES = {"verified", "two_source_confirmed"}
@@ -265,6 +267,40 @@ def trend_chart(metric_code: str, metric_name: str, unit: str = "") -> Path | No
 # ---------------------------------------------------------------------------
 # Scorecard-dependent exhibits
 # ---------------------------------------------------------------------------
+def _window_callout(ax) -> None:
+    """Print, on the chart, which bank leads each window and that they differ.
+
+    The scorecard is computed on two windows and they disagree about the
+    leader. A reader looking only at the lines cannot see that, so the
+    disagreement is stated on the figure itself rather than left in the prose
+    underneath it. The values are read from the scorecard outputs, so the box
+    cannot drift out of step with the numbers it quotes.
+    """
+    leaders: list[tuple[str, str, float]] = []
+    for label, filename in (("Full window FY22-FY26", "scorecard_summary_primary"),
+                            ("Merger-clean FY24-FY26",
+                             "scorecard_summary_merger_clean")):
+        path = OUT_TABLES / f"{filename}.csv"
+        if not path.exists():
+            return
+        summary = pd.read_csv(path, dtype=str, keep_default_na=False)
+        if summary.empty or "mean_overall" not in summary.columns:
+            return
+        summary["mean_overall"] = pd.to_numeric(summary["mean_overall"],
+                                                errors="coerce")
+        top = summary.sort_values("mean_overall", ascending=False).iloc[0]
+        leaders.append((label, str(top["bank"]), float(top["mean_overall"])))
+
+    if len(leaders) < 2:
+        return
+    text = "\n".join(f"{label}:  {bank} leads ({score:.1f})"
+                     for label, bank, score in leaders)
+    ax.text(0.015, 0.03, text, transform=ax.transAxes, fontsize=NOTE_SIZE,
+            color=NAVY, va="bottom", ha="left", zorder=5,
+            bbox=dict(boxstyle="round,pad=0.45", facecolor="#FFFFFF",
+                      edgecolor=GREY_TEXT, linewidth=0.6, alpha=0.95))
+
+
 def hero_chart() -> Path | None:
     """Overall scorecard ranking over the window, one line per bank."""
     path = OUT_TABLES / "scorecard_primary_FY22_FY26.csv"
@@ -289,6 +325,7 @@ def hero_chart() -> Path | None:
         ax.plot(years, series.values, color=BANK_COLOR[bank],
                 marker=BANK_MARKER[bank], markersize=7, linewidth=2.4, label=bank)
     _merger_line(ax, years)
+    _window_callout(ax)
     ax.set_ylim(0, 100)
     ax.set_ylabel("Overall score (0-100, relative to that year)", fontsize=LABEL_SIZE)
     ax.tick_params(labelsize=TICK_SIZE)
@@ -329,11 +366,23 @@ def pillar_charts() -> list[Path]:
             ax.plot(years, series.values, color=BANK_COLOR[bank],
                     marker=BANK_MARKER[bank], markersize=6, linewidth=2.2, label=bank)
         _merger_line(ax, years)
+
+        # A flat reference line makes "above or below the peer group" readable
+        # at a glance, which three overlapping lines otherwise hide.
+        peer_average = float(frame[pillar].mean())
+        ax.axhline(peer_average, color=GREY_TEXT, linestyle="--", linewidth=1.0,
+                   zorder=1)
+        ax.annotate(f"Peer average {peer_average:.1f}", xy=(0.995, peer_average),
+                    xycoords=("axes fraction", "data"), fontsize=NOTE_SIZE,
+                    color=GREY_TEXT, ha="right", va="bottom")
+
         ax.set_ylim(0, 100)
         ax.set_ylabel("Score (0-100)", fontsize=LABEL_SIZE)
         ax.tick_params(labelsize=TICK_SIZE)
         ax.legend(frameon=False, fontsize=TICK_SIZE, ncol=3, loc="best")
-        _title(ax, f"{label} pillar score", "Relative to the other two banks that year")
+        _title(ax, f"{label} pillar score",
+               "Relative to the other two banks that year; dashed line is the "
+               "peer-group average")
         fig.tight_layout()
         made.append(_save(fig, f"pillar_{pillar}.png"))
     if not made:
