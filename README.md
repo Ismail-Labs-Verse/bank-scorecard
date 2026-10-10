@@ -61,6 +61,7 @@ Most comparisons of this kind pick a set of weights, add up the scores and repor
 
 ### Interactive Tableau Dashboard
 <img src="outputs/tableau/dashboard.png" width="100%" alt="Tableau Dashboard">
+[Click here to view the interactive Tableau dashboard on Tableau Public](https://public.tableau.com/views/IndiaBankScorecard-SBIvsHDFCvsICICI/Bankscorecarddashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ---
 
 ## How to reproduce
