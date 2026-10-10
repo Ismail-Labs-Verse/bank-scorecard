@@ -325,20 +325,20 @@ def _memo(styles) -> list:
     story.append(Paragraph("Position", styles["h2"]))
     story.append(Paragraph(
         "<b>ICICI Bank leads the FY2022-FY2026 peer scorecard with a mean score "
-        "of 66.2, against 61.1 for HDFC Bank and 27.4 for State Bank of India.</b> "
+        "of 61.1, against 58.1 for HDFC Bank and 38.4 for State Bank of India.</b> "
         "The two leaders are strong in different places: ICICI Bank on asset "
         "quality (77.9 against 55.7 and 35.8) and HDFC Bank on profitability "
-        "(65.8 against 55.9 and 20.0). On the merger-clean window of "
-        "FY2024-FY2026 the same bank leads at a wider margin - ICICI 81.5, State "
-        "Bank of India 45.6, HDFC Bank 35.2.", styles["body"]))
+        "(60.1 against 46.4 and 40.7). On the merger-clean window of "
+        "FY2024-FY2026 the same bank leads more comfortably - ICICI 73.1, State "
+        "Bank of India 54.5, HDFC Bank 35.2.", styles["body"]))
     story.append(Paragraph(
         "The ranking is not an artefact of the chosen weights, but it is "
         "conditional on them. Re-drawing the pillar weights 10,000 times from a "
         "uniform distribution over the weight simplex puts ICICI Bank first in "
-        "69.7% of runs and HDFC Bank in 30.3%, while State Bank of India ranks "
+        "62.2% of runs and HDFC Bank in 37.8%, while State Bank of India ranks "
         "third in every single one. The condition is measurable: ICICI Bank "
-        "keeps the lead for any asset-quality weight above 0.22, and raising "
-        "the profit pillar above 0.56 hands it to HDFC Bank.", styles["body"]))
+        "keeps the lead for any asset-quality weight above 0.28, and raising "
+        "the profit pillar above 0.485 hands it to HDFC Bank.", styles["body"]))
     story.append(Paragraph(
         "This is a preliminary release. Ten of the eighty metrics behind the "
         "scorecard have been verified by hand; the remainder are "

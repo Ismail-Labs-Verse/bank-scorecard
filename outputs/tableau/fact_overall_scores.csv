@@ -1,14 +1,14 @@
 bank,period_label,asset_quality,profit,efficiency,overall,pillars_used,data_limitation,rank_in_year
 HDFC,FY2022,100.0,100.0,,100.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
 ICICI,FY2022,31.428571428571427,36.02941176470588,,33.882352941176464,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",2
-SBI,FY2022,0.0,0.0,,0.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
-HDFC,FY2023,100.0,100.0,,100.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
+SBI,FY2022,0.0,3.582554517133964,,1.9106957424714477,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
+HDFC,FY2023,100.0,71.32768361581918,,84.7080979284369,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
 ICICI,FY2023,58.18181818181818,47.196261682242984,,52.32285471537807,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",2
-SBI,FY2023,0.0,0.0,,0.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
-ICICI,FY2024,100.0,100.0,,100.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
+SBI,FY2023,0.0,49.99999999999999,,26.666666666666668,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
+ICICI,FY2024,100.0,62.440758293838826,,79.9684044233807,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
 HDFC,FY2024,50.0,37.80487804878047,,43.49593495934959,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",2
-SBI,FY2024,34.54545454545455,0.0,,16.12121212121212,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
-ICICI,FY2025,100.0,39.54659949622171,,67.75818639798491,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
+SBI,FY2024,34.54545454545455,50.0,,42.78787878787879,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
+ICICI,FY2025,100.0,29.791271347248607,,62.55534471853259,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1
 SBI,FY2025,50.0,50.0,,50.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",2
 HDFC,FY2025,28.57142857142858,50.0,,40.0,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",3
 ICICI,FY2026,100.0,56.55737704918032,,76.83060109289617,2,"1 of 3 pillars have no value for every bank; weights renormalised over the 2 pillar(s) available: asset_quality, profit",1

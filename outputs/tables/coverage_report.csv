@@ -16,4 +16,4 @@ SBI,net_npa_pct,Net NPA %,5,5,5,0,5,5
 SBI,net_profit_inr,Net profit,5,5,5,0,0,4
 SBI,nim_pct,Net interest margin,0,0,0,0,0,0
 SBI,roa_pct,Return on assets,5,5,5,0,5,5
-SBI,roe_pct,Return on equity,5,5,2,0,2,2
+SBI,roe_pct,Return on equity,5,5,5,0,5,1

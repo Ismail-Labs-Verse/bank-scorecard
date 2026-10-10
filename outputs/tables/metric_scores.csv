@@ -9,6 +9,7 @@ ICICI,FY2022,roa_pct,Return on assets,profit,1.65,1,72.05882352941175,False
 SBI,FY2022,roa_pct,Return on assets,profit,0.67,1,0.0,False
 HDFC,FY2022,roe_pct,Return on equity,profit,16.9,1,100.0,False
 ICICI,FY2022,roe_pct,Return on equity,profit,13.69,1,0.0,False
+SBI,FY2022,roe_pct,Return on equity,profit,13.92,1,7.165109034267928,False
 HDFC,FY2023,gross_npa_pct,Gross NPA %,asset_quality,1.12,-1,100.0,False
 SBI,FY2023,gross_npa_pct,Gross NPA %,asset_quality,2.35,-1,0.0,False
 HDFC,FY2023,net_npa_pct,Net NPA %,asset_quality,0.27,-1,100.0,False
@@ -17,8 +18,9 @@ SBI,FY2023,net_npa_pct,Net NPA %,asset_quality,0.82,-1,0.0,False
 HDFC,FY2023,roa_pct,Return on assets,profit,2.07,1,100.0,False
 ICICI,FY2023,roa_pct,Return on assets,profit,2.01,1,94.39252336448597,False
 SBI,FY2023,roa_pct,Return on assets,profit,1.0,1,0.0,False
-HDFC,FY2023,roe_pct,Return on equity,profit,17.4,1,100.0,False
+HDFC,FY2023,roe_pct,Return on equity,profit,17.4,1,42.65536723163837,False
 ICICI,FY2023,roe_pct,Return on equity,profit,15.89,1,0.0,False
+SBI,FY2023,roe_pct,Return on equity,profit,19.43,1,99.99999999999999,False
 HDFC,FY2024,gross_npa_pct,Gross NPA %,asset_quality,1.24,-1,100.0,False
 SBI,FY2024,gross_npa_pct,Gross NPA %,asset_quality,2.76,-1,0.0,False
 HDFC,FY2024,net_npa_pct,Net NPA %,asset_quality,0.95,-1,0.0,False
@@ -28,7 +30,8 @@ HDFC,FY2024,roa_pct,Return on assets,profit,1.98,1,75.60975609756095,False
 ICICI,FY2024,roa_pct,Return on assets,profit,2.18,1,99.99999999999999,False
 SBI,FY2024,roa_pct,Return on assets,profit,1.36,1,0.0,False
 HDFC,FY2024,roe_pct,Return on equity,profit,16.1,1,0.0,False
-ICICI,FY2024,roe_pct,Return on equity,profit,17.15,1,100.0,False
+ICICI,FY2024,roe_pct,Return on equity,profit,17.15,1,24.881516587677666,False
+SBI,FY2024,roe_pct,Return on equity,profit,20.32,1,100.0,False
 HDFC,FY2025,gross_npa_pct,Gross NPA %,asset_quality,1.9,-1,0.0,False
 SBI,FY2025,gross_npa_pct,Gross NPA %,asset_quality,1.82,-1,100.0,False
 HDFC,FY2025,net_npa_pct,Net NPA %,asset_quality,0.43,-1,57.14285714285716,False
@@ -37,8 +40,8 @@ SBI,FY2025,net_npa_pct,Net NPA %,asset_quality,0.47,-1,0.0,False
 HDFC,FY2025,roa_pct,Return on assets,profit,1.91,1,100.0,False
 SBI,FY2025,roa_pct,Return on assets,profit,1.1,1,0.0,False
 HDFC,FY2025,roe_pct,Return on equity,profit,14.6,1,0.0,False
-ICICI,FY2025,roe_pct,Return on equity,profit,16.17,1,39.54659949622171,False
-SBI,FY2025,roe_pct,Return on equity,profit,18.57,1,100.0,False
+ICICI,FY2025,roe_pct,Return on equity,profit,16.17,1,29.791271347248607,False
+SBI,FY2025,roe_pct,Return on equity,profit,19.87,1,100.0,False
 HDFC,FY2026,gross_npa_pct,Gross NPA %,asset_quality,2.26,-1,0.0,False
 SBI,FY2026,gross_npa_pct,Gross NPA %,asset_quality,1.49,-1,100.00000000000001,False
 HDFC,FY2026,net_npa_pct,Net NPA %,asset_quality,1.09,-1,0.0,False

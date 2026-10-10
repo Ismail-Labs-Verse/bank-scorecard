@@ -68,5 +68,8 @@ SBI,FY2023,roa_pct,Return on assets,profit,1.0,pct,0.32999999999999996,49.253731
 SBI,FY2024,roa_pct,Return on assets,profit,1.36,pct,0.3600000000000001,36.00000000000001,auto_extracted,SBI-roa_pct-FY2024--auto
 SBI,FY2025,roa_pct,Return on assets,profit,1.1,pct,-0.26,-19.11764705882353,auto_extracted,SBI-roa_pct-FY2025--auto
 SBI,FY2026,roa_pct,Return on assets,profit,1.12,pct,0.020000000000000018,1.81818181818183,auto_extracted,SBI-roa_pct-FY2026--auto
-SBI,FY2025,roe_pct,Return on equity,profit,18.57,pct,,,auto_extracted,SBI-roe_pct-FY2025--auto
-SBI,FY2026,roe_pct,Return on equity,profit,18.57,pct,0.0,0.0,auto_extracted,SBI-roe_pct-FY2026--auto
+SBI,FY2022,roe_pct,Return on equity,profit,13.92,pct,,,auto_extracted,SBI-roe_pct-FY2022--manual
+SBI,FY2023,roe_pct,Return on equity,profit,19.43,pct,5.51,39.58333333333333,auto_extracted,SBI-roe_pct-FY2023--manual
+SBI,FY2024,roe_pct,Return on equity,profit,20.32,pct,0.8900000000000006,4.580545548121462,auto_extracted,SBI-roe_pct-FY2024--manual
+SBI,FY2025,roe_pct,Return on equity,profit,19.87,pct,-0.4499999999999993,-2.2145669291338543,auto_extracted,SBI-roe_pct-FY2025--auto
+SBI,FY2026,roe_pct,Return on equity,profit,18.57,pct,-1.3000000000000007,-6.542526421741323,auto_extracted,SBI-roe_pct-FY2026--auto

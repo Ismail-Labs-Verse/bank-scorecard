@@ -13,8 +13,8 @@
 
 ## The 5-second summary
 
-- **ICICI Bank leads the peer group** with a mean overall score of **66.2**, ahead of HDFC Bank on **61.1** and State Bank of India on **27.4** — and it holds first place in **69.7%** of 10,000 randomised weightings.
-- **The two leaders are strong in different places.** ICICI Bank wins on asset quality (**77.9** against 55.7 and 35.8); HDFC Bank wins on profitability (**65.8** against 55.9 and 20.0). Which one finishes first therefore depends on how the two pillars are weighted — and that threshold is measured, not asserted.
+- **ICICI Bank leads the peer group** with a mean overall score of **61.1**, ahead of HDFC Bank on **58.1** and State Bank of India on **38.4** — and it holds first place in **62.2%** of 10,000 randomised weightings.
+- **The two leaders are strong in different places.** ICICI Bank wins on asset quality (**77.9** against 55.7 and 35.8); HDFC Bank wins on profitability (**60.1** against 46.4 and 40.7). Which one finishes first therefore depends on how the two pillars are weighted — and that threshold is measured, not asserted.
 - **SBI ranks third in every single one of the 10,000 runs.** It is never first and never second under any weighting of the pillars.
 
 ---
@@ -47,10 +47,10 @@ Most comparisons of this kind pick a set of weights, add up the scores and repor
 
 ## Key Findings
 
-- **ICICI Bank leads the FY2022–FY2026 scorecard** with a mean overall score of **66.2**, ahead of HDFC Bank on **61.1** and State Bank of India on **27.4**.
-- **The ranking is robust to reasonable disagreement about weights.** Across 10,000 random weightings, ICICI Bank ranks first in **69.7%** of runs and HDFC Bank in **30.3%**. State Bank of India ranks third in **100.0%** of them.
-- **One weight reverses the result, and the threshold is known.** ICICI Bank holds first place while the asset-quality pillar is weighted above **0.22**; below that HDFC Bank takes the lead. Raising the profit pillar above **0.56** does the same, so the outcome rests on the balance struck between asset quality and profitability.
-- **The merger-clean window sharpens the picture.** Restricted to FY2024–FY2026, ICICI Bank scores **81.5**, State Bank of India **45.6** and HDFC Bank **35.2** — the same winner, a wider margin, and a different order behind it.
+- **ICICI Bank leads the FY2022–FY2026 scorecard** with a mean overall score of **61.1**, ahead of HDFC Bank on **58.1** and State Bank of India on **38.4**.
+- **The ranking is robust to reasonable disagreement about weights.** Across 10,000 random weightings, ICICI Bank ranks first in **62.2%** of runs and HDFC Bank in **37.8%**. State Bank of India ranks third in **100.0%** of them.
+- **One weight reverses the result, and the threshold is known.** ICICI Bank holds first place while the asset-quality pillar is weighted above **0.28**; below that HDFC Bank takes the lead. Raising the profit pillar above **0.485** does the same, so the outcome rests on the balance struck between asset quality and profitability.
+- **The merger-clean window sharpens the picture.** Restricted to FY2024–FY2026, ICICI Bank scores **73.1**, State Bank of India **54.5** and HDFC Bank **35.2** — the same winner and a different order behind it.
 
 ---
 
