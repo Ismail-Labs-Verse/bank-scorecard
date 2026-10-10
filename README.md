@@ -59,6 +59,8 @@ Most comparisons of this kind pick a set of weights, add up the scores and repor
 
 *Pillar scores are computed within each financial year, so the three banks span 0 to 100 in every period.*
 
+### Interactive Tableau Dashboard
+<img src="outputs/tableau/dashboard.png" width="100%" alt="Tableau Dashboard">
 ---
 
 ## How to reproduce
