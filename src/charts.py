@@ -69,8 +69,9 @@ BANK_MARKER = {"SBI": "o", "HDFC": "s", "ICICI": "^"}
 
 PILLAR_COLOR = {"asset_quality": NAVY, "profit": GOLD, "efficiency": SLATE}
 
-TITLE_SIZE, LABEL_SIZE, TICK_SIZE, NOTE_SIZE = 14, 10, 9, 8
-DPI = 200
+TITLE_SIZE, LABEL_SIZE, TICK_SIZE, NOTE_SIZE = 15, 10, 9, 8
+DPI = 300          # print quality: the figures are embedded in the PDFs and the
+                   # README, so they are rendered at publication resolution
 
 #: The HDFC merger completed on 1 July 2023, which falls inside FY2024.
 MERGER_YEAR = "FY2024"

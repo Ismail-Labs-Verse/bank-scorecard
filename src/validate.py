@@ -29,7 +29,8 @@ def _val(df, bank, code, period, basis="standalone"):
 
 def check_schema(df):
     bad = sorted(set(df["status"]) - {"verified", "two_source_confirmed", "conflict", "UNVERIFIED",
-                                     "auto_extracted", "ocr_extracted", "MANUAL_REQUIRED"})
+                                     "auto_extracted", "ocr_extracted", "manually_corrected",
+                                     "MANUAL_REQUIRED"})
     if bad:
         return FAIL, "status", f"invalid status value(s): {bad}"
     bad = sorted(set(df["verification_method"]) - {"recomputed", "cross_issuer", "same_issuer_2_docs",

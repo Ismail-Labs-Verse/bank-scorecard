@@ -50,8 +50,8 @@ SBI,FY2024,net_npa_pct,Net NPA %,asset_quality,0.57,pct,-0.25,-30.48780487804878
 SBI,FY2025,net_npa_pct,Net NPA %,asset_quality,0.47,pct,-0.09999999999999998,-17.543859649122805,auto_extracted,SBI-net_npa_pct-FY2025--auto
 SBI,FY2026,net_npa_pct,Net NPA %,asset_quality,0.39,pct,-0.07999999999999996,-17.021276595744673,auto_extracted,SBI-net_npa_pct-FY2026--auto
 SBI,FY2022,net_profit_inr,Net profit,context,31676.0,INR_crore,,,auto_extracted,SBI-net_profit_inr-FY2022--auto
-SBI,FY2023,net_profit_inr,Net profit,context,2258.0,INR_crore,-29418.0,-92.87157469377448,auto_extracted,SBI-net_profit_inr-FY2023--auto
-SBI,FY2024,net_profit_inr,Net profit,context,13102.0,INR_crore,10844.0,480.24800708591675,auto_extracted,SBI-net_profit_inr-FY2024--auto
+SBI,FY2023,net_profit_inr,Net profit,context,50232.0,INR_crore,18556.0,58.58062886728121,manually_corrected,SBI-net_profit_inr-FY2023--auto
+SBI,FY2024,net_profit_inr,Net profit,context,13102.0,INR_crore,-37130.0,-73.91702500398152,auto_extracted,SBI-net_profit_inr-FY2024--auto
 SBI,FY2025,net_profit_inr,Net profit,context,70901.0,INR_crore,57799.0,441.1463898641429,auto_extracted,SBI-net_profit_inr-FY2025--auto
 SBI,FY2026,net_profit_inr,Net profit,context,80032.0,INR_crore,9131.0,12.87852075429119,auto_extracted,SBI-net_profit_inr-FY2026--auto
 SBI,FY2022,roa_pct,Return on assets,profit,0.67,pct,,,auto_extracted,SBI-roa_pct-FY2022--auto

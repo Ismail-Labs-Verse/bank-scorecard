@@ -50,7 +50,7 @@ SBI,standalone,annual,FY2024,net_npa_pct,Net NPA %,asset_quality,0.57,pct,auto_e
 SBI,standalone,annual,FY2025,net_npa_pct,Net NPA %,asset_quality,0.47,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2025--auto
 SBI,standalone,annual,FY2026,net_npa_pct,Net NPA %,asset_quality,0.39,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2026--auto
 SBI,standalone,annual,FY2022,net_profit_inr,Net profit,context,31676.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2022--auto
-SBI,standalone,annual,FY2023,net_profit_inr,Net profit,context,2258.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2023--auto
+SBI,standalone,annual,FY2023,net_profit_inr,Net profit,context,50232.0,INR_crore,manually_corrected,single_source,SBI-net_profit_inr-FY2023--auto
 SBI,standalone,annual,FY2024,net_profit_inr,Net profit,context,13102.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2024--auto
 SBI,standalone,annual,FY2025,net_profit_inr,Net profit,context,70901.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2025--auto
 SBI,standalone,annual,FY2026,net_profit_inr,Net profit,context,80032.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2026--auto

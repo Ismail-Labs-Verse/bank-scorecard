@@ -45,7 +45,21 @@ SEED = 42
 # ---------------------------------------------------------------------------
 ALLOW_UNVERIFIED_SCORING = True
 
-TRUSTED_STATUSES = {"verified", "two_source_confirmed"}
+# NOTE ON THIS SWITCH (measured, not assumed):
+# With it set to False the pipeline has 0 score-eligible rows and produces no
+# scorecard at all - no overall scores, no pillar scores, no weight
+# simulations and therefore no hero chart, no pillar charts and no sensitivity
+# chart. That is the honest consequence of requiring human verification when
+# only one of 80 values has been checked against its page.
+#
+# It is therefore True while the extracted values remain provisional, and
+# setting it to False is the single line that locks the study down once the
+# review in data/source_log.csv is complete.
+
+#: Statuses that always count as checked. ``manually_corrected`` is a value a
+#: person read off the page and replaced, which is the strongest evidence this
+#: project records.
+TRUSTED_STATUSES = {"verified", "two_source_confirmed", "manually_corrected"}
 if ALLOW_UNVERIFIED_SCORING:
     TRUSTED_STATUSES |= {"auto_extracted", "ocr_extracted"}
 N_SENSITIVITY_DRAWS = 10_000

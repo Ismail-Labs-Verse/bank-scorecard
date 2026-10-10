@@ -39,7 +39,8 @@ REQUIRED_COLUMNS = [
 #                                      credible; a human must supply it
 #   conflict / UNVERIFIED           -> declared but unresolved / not checked
 VALID_STATUS = {"verified", "two_source_confirmed", "conflict", "UNVERIFIED",
-                "auto_extracted", "ocr_extracted", "MANUAL_REQUIRED"}
+                "auto_extracted", "ocr_extracted", "manually_corrected",
+                "MANUAL_REQUIRED"}
 VALID_PERIOD_TYPES = {"annual", "quarter"}
 VALID_VERIFICATION = {"recomputed", "cross_issuer", "same_issuer_2_docs", "single_source", ""}
 
