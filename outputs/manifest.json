@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-10T11:09:28Z",
-  "runtime_seconds": 69.81,
+  "generated_utc": "2026-10-10T11:19:36Z",
+  "runtime_seconds": 29.97,
   "blocked": false,
   "python": "3.12.15",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
@@ -41,7 +41,7 @@
     {
       "stage": "metrics_trends",
       "status": "OK",
-      "detail": "62 rows -> outputs/tables/trends.csv"
+      "detail": "71 rows -> outputs/tables/trends.csv"
     },
     {
       "stage": "dupont",
@@ -66,22 +66,22 @@
     {
       "stage": "scorecard/skipped",
       "status": "WARN",
-      "detail": "FY2022/roe_pct: only 1 bank(s) with a value"
-    },
-    {
-      "stage": "scorecard/skipped",
-      "status": "WARN",
       "detail": "FY2023/nim_pct: only 1 bank(s) with a value"
     },
     {
       "stage": "scorecard/skipped",
       "status": "WARN",
-      "detail": "FY2023/roe_pct: only 1 bank(s) with a value"
+      "detail": "FY2024/nim_pct: only 1 bank(s) with a value"
     },
     {
       "stage": "scorecard/skipped",
       "status": "WARN",
-      "detail": "FY2024/nim_pct: only 1 bank(s) with a value"
+      "detail": "FY2025/nim_pct: only 1 bank(s) with a value"
+    },
+    {
+      "stage": "scorecard/skipped",
+      "status": "WARN",
+      "detail": "FY2026/nim_pct: only 1 bank(s) with a value"
     },
     {
       "stage": "sensitivity",
@@ -106,39 +106,39 @@
   ],
   "outputs": {
     "outputs/tables/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "outputs/tables/coverage_report.csv": "c33013c21acea89fc5d64ccc292b95e4aab96bcda50b2dee377c0d03e6382dea",
-    "outputs/tables/dupont.csv": "b2debb1f0801ae05dfc56222825f156e50736d1ff44f50f5f1f3c189a8e618b4",
+    "outputs/tables/coverage_report.csv": "afd7870e0f9baea4381e05bc2ec5bdc235239f2a6a48b39bd760d7ccdc51f9ec",
+    "outputs/tables/dupont.csv": "0c8cfe1a25f7bd3f6657756e83cd2571c2bf001b08cd9fc27137e475ebf6ba70",
     "outputs/tables/extraction_candidates.csv": "d7c89e130c0d1207da68130a1ef6bae6c2c5aa4482ab348b90167246fb467e97",
     "outputs/tables/extraction_coverage.csv": "c06a958a7799a1dbfff9303f9f7cd89c2197b2ed2feb963f47d924aec1f81ceb",
     "outputs/tables/icici_manual_entry.csv": "ce1bbeae9744d496a81477237c94999c7cada44412be0cf7c6a04c1f7a92da1f",
-    "outputs/tables/metric_scores.csv": "513e22ed7719d14bcc3d6e9b10b26419ed61950e6721a1895f157ec9ecab4494",
+    "outputs/tables/metric_scores.csv": "d77b39bee5022b0a78a5fba2d024f97001d4cff4fab078a0e46c874cd1075446",
     "outputs/tables/pdf_probe_report.csv": "3eb1c2e17aa2a12b51e6e7af6957bb57d545294964cb19341f81d0814bf5b87b",
     "outputs/tables/profit_quality.csv": "70c14fdbbc8db11ce33aa675b8988d2f916626576ee9aada89a4aea8c82d8d6c",
-    "outputs/tables/scorecard_primary_FY22_FY26.csv": "4ee6eef6473b260b8823e13655a2bf11fb96bb1cef2419c8e824c49afeafe30b",
-    "outputs/tables/scorecard_summary_merger_clean.csv": "0ab2fb95180883f5f4cde90154341199989721ad9278d2bd2640e060c5c13827",
-    "outputs/tables/scorecard_summary_primary.csv": "fc012f397e57ece8c0668875fa6d1ea552efe10ca0ff2682ae40e1bb1b38229c",
-    "outputs/tables/sensitivity_flip_ranges.csv": "bd3304687504e8c1cb3ab8bf7bb1df5377e0837f8dc9624eb2910d2d9ac0f416",
-    "outputs/tables/sensitivity_simplex_grid.csv": "bab810c29c415178169da6568c55f155f9311558da9afe7751ff7ff945056d5f",
-    "outputs/tables/sensitivity_win_shares.csv": "f041ecf37d874bbde4ac996875b2a40eba9871849051dc80cbc5d4aa59a7d65c",
-    "outputs/tables/trends.csv": "9eccc461ee68d96e17c4c983268ffbc672ce3a73115bad0225f4d9eb348c3ee4",
+    "outputs/tables/scorecard_primary_FY22_FY26.csv": "7a7cb5e52c26eb7d7ab748bf9c6977303c6b100c48af7bc3e426da25d03af661",
+    "outputs/tables/scorecard_summary_merger_clean.csv": "590efdff95db61643f76224e54093252bc61d1924693cfb764348064d7ab555e",
+    "outputs/tables/scorecard_summary_primary.csv": "b1bf2f5bb15bfdc98ffa988e6415598a49bdf852a7909e7d91de71d6b28d3cff",
+    "outputs/tables/sensitivity_flip_ranges.csv": "3facb008f3f8ac3c9d449d29eedbb3eff5c79031cd2cefd97529b2c8853cb812",
+    "outputs/tables/sensitivity_simplex_grid.csv": "d94ad1d80608de79824f01fa3d0d39bfe02951ff2f30d009c7010ccda985df92",
+    "outputs/tables/sensitivity_win_shares.csv": "17f82e77144c937e1e4678001e7ce80d6d403e51b42af31cc3ae1c0d9cdca9df",
+    "outputs/tables/trends.csv": "37219ebf13e1d0b8a8d8a11ca67d725368a1bef3e502d305f201de5715657f92",
     "outputs/tables/validation_report.csv": "bba140432c76377dff24a01ea3c49159a8f0ed1557f2d86417dfe5f13028bbf9",
     "outputs/charts/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "outputs/charts/coverage_heatmap.png": "852fa57552a8fbeda94ef5a5aabc42773324258a8acdb20b1405e9c3b60e53c3",
-    "outputs/charts/hero_chart.png": "b2cb1d56f276cdbcb37b5244387c6f7e2917a2860d5564d07000ffee6d3e0b5b",
+    "outputs/charts/hero_chart.png": "e792fb63d17bc35044b74f5088245c2241cac9ac9027d7b8ef35d9b93efc0649",
     "outputs/charts/pillar_asset_quality.png": "f2751a522593b95b563556ec0bb6c6890f93c232c048f0781ce744319250ab01",
-    "outputs/charts/pillar_profit.png": "fdd53a49992cc22e3e1fc3c58724aff1c849ef12f3712d3ddbb0bea9fe0ea96d",
-    "outputs/charts/sensitivity_chart.png": "b842170c2afb4dfd7bc0b76e2c24d5e24b438955b42fa64832369ae1287722f4",
+    "outputs/charts/pillar_profit.png": "4da3543aca7b2c49c775e9d86441a07204360943057d1af594058295d79899b6",
+    "outputs/charts/sensitivity_chart.png": "34a74c3f194cfbbc15332aedc4a9cb5e7352d582ba6c000c8a1b33bb6ff26f98",
     "outputs/charts/trend_gross_npa_pct.png": "8c0a1a287d997f7fa3967b89d74935f27c29af52b2519a6120bfd791d5dd43ff",
     "outputs/charts/trend_net_npa_pct.png": "19b6affff9525991f428f30bd8a946bd0b244796538d3962385618f3af5b8bfe",
     "outputs/charts/trend_net_profit_inr.png": "0c21ffd0909fa3f6424f102aa01ffeb7fd1ffb966bb70c5243b7e00d61205a16",
-    "outputs/charts/trend_roa_pct.png": "107d4782625174518c3ee00a90f91f3165b81bfd3582a774e496a6b1c2dc02b8",
-    "outputs/charts/trend_roe_pct.png": "2d5d9f4889c8de3ed36355e8b41d568b3280b61911dd11cffd5a15d05b8be246",
+    "outputs/charts/trend_roa_pct.png": "1bed72f5b02ff9ea69f513bacf3c7e05bfacde253f4035a39ca456fb64dcaa15",
+    "outputs/charts/trend_roe_pct.png": "489b6f92bcd3042596b9a85429ae61a943de70648899641b18216b3c53f133b6",
     "outputs/tableau/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "outputs/tableau/dim_pillar_weights.csv": "9c867a19dc09becdcdfcbdf58fef41536292ea10e25b406f4c5ef10f2912d681",
-    "outputs/tableau/fact_metrics.csv": "fc2b8284cbbe000923e7440251d56d655ba8a87b1f4ac07995c50fd649108ca9",
-    "outputs/tableau/fact_overall_scores.csv": "4ee6eef6473b260b8823e13655a2bf11fb96bb1cef2419c8e824c49afeafe30b",
-    "outputs/tableau/fact_scores.csv": "513e22ed7719d14bcc3d6e9b10b26419ed61950e6721a1895f157ec9ecab4494",
-    "outputs/tableau/sens_win_shares.csv": "f041ecf37d874bbde4ac996875b2a40eba9871849051dc80cbc5d4aa59a7d65c"
+    "outputs/tableau/fact_metrics.csv": "4add66dc697cc1a19245f05b1e752e21846b03623cadeb21db5350b0d539ae66",
+    "outputs/tableau/fact_overall_scores.csv": "7a7cb5e52c26eb7d7ab748bf9c6977303c6b100c48af7bc3e426da25d03af661",
+    "outputs/tableau/fact_scores.csv": "d77b39bee5022b0a78a5fba2d024f97001d4cff4fab078a0e46c874cd1075446",
+    "outputs/tableau/sens_win_shares.csv": "17f82e77144c937e1e4678001e7ce80d6d403e51b42af31cc3ae1c0d9cdca9df"
   },
   "library_versions": {
     "pandas": "2.3.3",

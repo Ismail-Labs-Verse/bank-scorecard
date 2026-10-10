@@ -9,8 +9,8 @@ ICICI,gross_npa_pct,Gross NPA %,5,5,0,0,0,1
 ICICI,net_npa_pct,Net NPA %,5,5,5,0,5,1
 ICICI,net_profit_inr,Net profit,5,5,5,0,0,5
 ICICI,nim_pct,Net interest margin,5,5,5,0,5,1
-ICICI,roa_pct,Return on assets,5,5,0,0,0,1
-ICICI,roe_pct,Return on equity,5,5,0,0,0,1
+ICICI,roa_pct,Return on assets,5,5,4,0,4,1
+ICICI,roe_pct,Return on equity,5,5,5,0,5,1
 SBI,gross_npa_pct,Gross NPA %,5,5,5,0,5,5
 SBI,net_npa_pct,Net NPA %,5,5,5,0,5,5
 SBI,net_profit_inr,Net profit,5,5,5,0,0,4

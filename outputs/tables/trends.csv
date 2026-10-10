@@ -39,6 +39,15 @@ ICICI,FY2023,nim_pct,Net interest margin,profit,4.48,pct,0.5200000000000005,13.1
 ICICI,FY2024,nim_pct,Net interest margin,profit,4.53,pct,0.04999999999999982,1.116071428571419,ocr_extracted,ICICI-nim_pct-FY2024--chart
 ICICI,FY2025,nim_pct,Net interest margin,profit,4.32,pct,-0.20999999999999996,-4.635761589403975,ocr_extracted,ICICI-nim_pct-FY2025--chart
 ICICI,FY2026,nim_pct,Net interest margin,profit,4.32,pct,0.0,0.0,ocr_extracted,ICICI-nim_pct-FY2026--chart
+ICICI,FY2022,roa_pct,Return on assets,profit,1.65,pct,,,manually_corrected,ICICI-roa_pct-FY2022--manual
+ICICI,FY2023,roa_pct,Return on assets,profit,2.01,pct,0.3599999999999999,21.818181818181802,manually_corrected,ICICI-roa_pct-FY2023--manual
+ICICI,FY2024,roa_pct,Return on assets,profit,2.18,pct,0.17000000000000037,8.457711442786087,manually_corrected,ICICI-roa_pct-FY2024--manual
+ICICI,FY2026,roa_pct,Return on assets,profit,2.11,pct,-0.07000000000000028,-3.2110091743119407,manually_corrected,ICICI-roa_pct-FY2026--manual
+ICICI,FY2022,roe_pct,Return on equity,profit,13.69,pct,,,manually_corrected,ICICI-roe_pct-FY2022--manual
+ICICI,FY2023,roe_pct,Return on equity,profit,15.89,pct,2.200000000000001,16.070124178232305,manually_corrected,ICICI-roe_pct-FY2023--manual
+ICICI,FY2024,roe_pct,Return on equity,profit,17.15,pct,1.259999999999998,7.929515418502198,manually_corrected,ICICI-roe_pct-FY2024--manual
+ICICI,FY2025,roe_pct,Return on equity,profit,16.17,pct,-0.9799999999999969,-5.714285714285694,manually_corrected,ICICI-roe_pct-FY2025--manual
+ICICI,FY2026,roe_pct,Return on equity,profit,14.86,pct,-1.3100000000000023,-8.101422387136681,manually_corrected,ICICI-roe_pct-FY2026--manual
 SBI,FY2022,gross_npa_pct,Gross NPA %,asset_quality,2.22,pct,,,auto_extracted,SBI-gross_npa_pct-FY2022--auto
 SBI,FY2023,gross_npa_pct,Gross NPA %,asset_quality,2.35,pct,0.1299999999999999,5.8558558558558405,auto_extracted,SBI-gross_npa_pct-FY2023--auto
 SBI,FY2024,gross_npa_pct,Gross NPA %,asset_quality,2.76,pct,0.4099999999999997,17.44680851063829,auto_extracted,SBI-gross_npa_pct-FY2024--auto

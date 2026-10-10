@@ -35,7 +35,7 @@ def check_schema(df):
         return FAIL, "status", f"invalid status value(s): {bad}"
     bad = sorted(set(df["verification_method"]) - {"recomputed", "cross_issuer", "same_issuer_2_docs",
                                                      "single_source", "automated_regex",
-                                                     "coordinate_text", ""})
+                                                     "coordinate_text", "human_verified", ""})
     if bad:
         return FAIL, "verification_method", f"invalid verification_method(s): {bad}"
     unknown = sorted(set(df["metric_code"]) - set(METRICS))

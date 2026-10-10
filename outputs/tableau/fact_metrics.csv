@@ -39,6 +39,15 @@ ICICI,standalone,annual,FY2023,nim_pct,Net interest margin,profit,4.48,pct,ocr_e
 ICICI,standalone,annual,FY2024,nim_pct,Net interest margin,profit,4.53,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2024--chart
 ICICI,standalone,annual,FY2025,nim_pct,Net interest margin,profit,4.32,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2025--chart
 ICICI,standalone,annual,FY2026,nim_pct,Net interest margin,profit,4.32,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2026--chart
+ICICI,standalone,annual,FY2022,roa_pct,Return on assets,profit,1.65,pct,manually_corrected,human_verified,ICICI-roa_pct-FY2022--manual
+ICICI,standalone,annual,FY2023,roa_pct,Return on assets,profit,2.01,pct,manually_corrected,human_verified,ICICI-roa_pct-FY2023--manual
+ICICI,standalone,annual,FY2024,roa_pct,Return on assets,profit,2.18,pct,manually_corrected,human_verified,ICICI-roa_pct-FY2024--manual
+ICICI,standalone,annual,FY2026,roa_pct,Return on assets,profit,2.11,pct,manually_corrected,human_verified,ICICI-roa_pct-FY2026--manual
+ICICI,standalone,annual,FY2022,roe_pct,Return on equity,profit,13.69,pct,manually_corrected,human_verified,ICICI-roe_pct-FY2022--manual
+ICICI,standalone,annual,FY2023,roe_pct,Return on equity,profit,15.89,pct,manually_corrected,human_verified,ICICI-roe_pct-FY2023--manual
+ICICI,standalone,annual,FY2024,roe_pct,Return on equity,profit,17.15,pct,manually_corrected,human_verified,ICICI-roe_pct-FY2024--manual
+ICICI,standalone,annual,FY2025,roe_pct,Return on equity,profit,16.17,pct,manually_corrected,human_verified,ICICI-roe_pct-FY2025--manual
+ICICI,standalone,annual,FY2026,roe_pct,Return on equity,profit,14.86,pct,manually_corrected,human_verified,ICICI-roe_pct-FY2026--manual
 SBI,standalone,annual,FY2022,gross_npa_pct,Gross NPA %,asset_quality,2.22,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2022--auto
 SBI,standalone,annual,FY2023,gross_npa_pct,Gross NPA %,asset_quality,2.35,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2023--auto
 SBI,standalone,annual,FY2024,gross_npa_pct,Gross NPA %,asset_quality,2.76,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2024--auto

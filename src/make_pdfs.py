@@ -324,30 +324,30 @@ def _memo(styles) -> list:
 
     story.append(Paragraph("Position", styles["h2"]))
     story.append(Paragraph(
-        "<b>On the full FY2022-FY2026 window ICICI Bank leads with a mean score of "
-        "77.9, against 68.7 for HDFC Bank and 27.4 for State Bank of India.</b> "
-        "That ordering does not survive a change of assumptions, and the "
-        "instability is the more useful result: re-drawing the pillar weights "
-        "10,000 times puts HDFC Bank first in 77.95% of runs and ICICI Bank in "
-        "22.05%, while SBI never ranks first at all. Restricted to the "
-        "merger-clean window of FY2024-FY2026 the order changes again, with "
-        "ICICI at 100.0, HDFC at 47.8 and SBI at 45.6.", styles["body"]))
+        "<b>ICICI Bank leads the FY2022-FY2026 scorecard with a mean score of "
+        "66.2, against 61.1 for HDFC Bank and 27.4 for State Bank of India.</b> "
+        "The two leaders are strong in different places: ICICI on asset quality "
+        "(77.9 against 55.7 and 35.8) and HDFC Bank on profitability (65.8 "
+        "against 55.9 and 20.0). The merger-clean window of FY2024-FY2026 gives "
+        "the same winner at a wider margin - ICICI 81.5, SBI 45.6, HDFC Bank "
+        "35.2.", styles["body"]))
     story.append(Paragraph(
-        "The study therefore reports a threshold rather than a winner: HDFC "
-        "Bank holds first place for any asset-quality weight below 0.685, and "
-        "leadership passes to ICICI Bank above it. The profit pillar is the "
-        "steadier support, keeping HDFC ahead for any profit weight above "
-        "0.14. Efficiency carries no data for any bank and contributes "
-        "nothing.", styles["body"]))
+        "The ranking is not an artefact of the chosen weights, but it is "
+        "conditional on them. Re-drawing the pillar weights 10,000 times from a "
+        "uniform distribution over the weight simplex puts ICICI Bank first in "
+        "69.7% of runs and HDFC Bank in 30.3%, while State Bank of India ranks "
+        "third in every single one. The condition is measurable: ICICI keeps the "
+        "lead for any asset-quality weight above 0.22, and raising the profit "
+        "pillar above 0.56 hands it to HDFC Bank. Efficiency carries no data "
+        "for any bank and contributes nothing.", styles["body"]))
     story.append(Paragraph(
-        "One qualification governs every figure above. ICICI Bank's net profit "
-        "was read from chart coordinates and is confirmed by up to five of its "
-        "own reports plus the growth rate stated in the FY2026 document; the "
-        "remaining cells are machine-extracted and not yet checked line by "
-        "line against the pages they cite. Twenty ICICI cells and the two "
-        "remaining ratio pillars are still outstanding. The numbers are "
-        "reported because the pipeline is complete and reproducible, not "
-        "because the extraction is finished.", styles["body"]))
+        "One qualification governs every figure above. The ICICI return figures "
+        "were read by hand from the annual reports, its net profit was read from "
+        "chart coordinates and is confirmed by up to five of its own reports, "
+        "and the remaining cells are machine-extracted and not yet checked line "
+        "by line against the pages they cite. Six ICICI cells are still blank. "
+        "The numbers are reported because the pipeline is complete and "
+        "reproducible, not because the extraction is finished.", styles["body"]))
 
     story.append(Paragraph("Method", styles["h2"]))
     for line in (

@@ -13,9 +13,9 @@
 
 ## The 5-second summary
 
-- **No bank wins outright.** ICICI leads on the full FY2022–FY2026 window (mean score **77.9**), but HDFC Bank ranks first in **78.0%** of 10,000 random weightings, and HDFC also leads the merger-clean window.
-- **SBI never ranks first** — not in a single one of the 10,000 weightings, and not in either window.
-- **The verdict is not robust.** Move the asset-quality pillar weight above **0.685** and the leader flips from HDFC to ICICI. That threshold, not a single ranking, is the real result.
+- **ICICI Bank leads.** It tops the full FY2022–FY2026 window with a mean score of **66.2**, against **61.1** for HDFC Bank and **27.4** for State Bank of India — and it ranks first in **69.7%** of 10,000 random weightings.
+- **SBI is last in every single one.** All 10,000 weightings place SBI third: never first, never second.
+- **The lead is conditional, and the condition is measurable.** ICICI holds first place while the asset-quality pillar is weighted above **0.22**; below that, HDFC Bank takes the lead.
 
 ---
 
@@ -29,10 +29,10 @@ Most comparisons of this kind pick a set of weights, add up the scores and repor
 
 ## Key findings
 
-- **ICICI Bank tops the headline table** on the FY2022–FY2026 window with a mean overall score of **77.9**, against **68.7** for HDFC Bank and **27.4** for SBI.
-- **HDFC Bank is the more likely winner once weights are varied.** Drawing pillar weights from a uniform distribution over the weight simplex, HDFC ranks first in **77.95%** of 10,000 runs, ICICI in **22.05%**, SBI in **0.00%**.
-- **The merger-clean window reverses the order.** Restricted to FY2024–FY2026, ICICI scores **100.0**, HDFC **47.8** and SBI **45.6** — a different ranking from the full window, which is exactly why both are reported.
-- **The result hinges on one weight.** HDFC holds first place while the asset-quality pillar is weighted below **0.685**; above that, leadership passes to ICICI. The profit pillar is less fragile — HDFC keeps the lead for any profit weight above **0.14**.
+- **ICICI Bank tops the FY2022–FY2026 scorecard** with a mean overall score of **66.2**, ahead of HDFC Bank on **61.1** and State Bank of India on **27.4**. The two are strong in different places: ICICI leads on asset quality (**77.9** against 55.7 and 35.8) while HDFC Bank leads on profitability (**65.8** against 55.9 and 20.0).
+- **The ranking survives changing the weights.** Drawing pillar weights 10,000 times from a uniform distribution over the weight simplex, ICICI ranks first in **69.7%** of runs and HDFC Bank in **30.3%**. SBI ranks third in **100.0%** of them.
+- **One weight can still reverse it.** ICICI keeps the lead for any asset-quality weight above **0.22**; below that, leadership passes to HDFC Bank. Raising the profit pillar above **0.56** does the same. The result therefore rests on how much weight is given to asset quality versus profitability — which is exactly what the sensitivity test exists to expose.
+- **The merger-clean window sharpens the picture.** Restricted to FY2024–FY2026, ICICI scores **81.5**, SBI **45.6** and HDFC Bank **35.2** — the same winner, a wider margin, and a different order behind it.
 
 ---
 
@@ -86,7 +86,7 @@ Raw documents are **not committed** — they are large and remain the copyright 
 
 ## Limitations
 
-- **Extraction is not yet fully verified.** Of the 80 source rows, 20 ICICI cells are still blank and the remainder are machine-located. Automated extraction from annual reports can capture a segment figure or mis-date a multi-year row; `data/source_log.csv` records the page and matched line for every value so each one can be checked. **Treat the specific numbers in this README as provisional until that review is complete.**
+- **Extraction is not yet fully verified.** Of the 80 source rows, six ICICI cells remain blank — Gross NPA for all five years and FY2025 return on assets — and the ICICI return figures were read by hand rather than by machine. Automated extraction from annual reports can capture a segment figure or mis-date a multi-year row; `data/source_log.csv` records the page and matched line for every value so each one can be checked. **Treat the specific numbers in this README as provisional until that review is complete.**
 - **The HDFC merger.** HDFC Bank absorbed HDFC Ltd on 1 July 2023, so FY2024 contains roughly nine months of the combined entity. Every time series marks it, and the scorecard is reported on both windows.
 - **Definitions differ between banks.** Provision coverage, cost-to-income and margin denominators are not defined identically, and are flagged rather than harmonised.
 - **Two pillars are thin.** The efficiency pillar has no data for any bank in this dataset, and the profit pillar rests on fewer metrics than intended, which is part of why the ranking moves between windows.
