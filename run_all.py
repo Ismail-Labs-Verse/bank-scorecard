@@ -170,14 +170,37 @@ def main():
         primary["summary"].to_csv(C.OUT_TABLES / "scorecard_summary_primary.csv", index=False)
     if not clean["summary"].empty:
         clean["summary"].to_csv(C.OUT_TABLES / "scorecard_summary_merger_clean.csv", index=False)
+    limitation_warnings = []
     if primary["scored"].empty:
         record("scorecard", WARN,
                "no score produced: no metric has a trusted value for all three banks "
                "in the same year yet")
+        try:
+            csv_path, json_path, blocked = _write_missing_data_report(df)
+            record("scorecard/missing_data", WARN,
+                   f"{blocked} cell(s) block the scorecard -> "
+                   f"{csv_path.relative_to(ROOT)} and {json_path.relative_to(ROOT)}")
+        except Exception as exc:
+            record("scorecard/missing_data", WARN,
+                   f"could not write the missing-data report: "
+                   f"{type(exc).__name__}: {exc}")
+        _remove_stale(
+            C.OUT_TABLES / "scorecard_primary_FY22_FY26.csv",
+            C.OUT_TABLES / "scorecard_summary_primary.csv",
+            C.OUT_TABLES / "scorecard_summary_merger_clean.csv",
+            C.OUT_TABLES / "sensitivity_win_shares.csv",
+            C.OUT_TABLES / "sensitivity_flip_ranges.csv",
+            C.OUT_TABLES / "sensitivity_simplex_grid.csv",
+        )
     else:
         w = S.winner(primary["scored"])
         record("scorecard", OK, f"primary window winner: {w}; "
                                 f"{len(primary['scored'])} bank-year rows")
+        limitation_warnings = sorted({str(v) for v in
+                                      primary["scored"].get("data_limitation", [])
+                                      if isinstance(v, str) and v})
+        for limitation in limitation_warnings[:3]:
+            record("scorecard/data_limitation", WARN, limitation)
         for s in primary["skipped"][:5]:
             record("scorecard/skipped", WARN, s)
 
@@ -224,6 +247,84 @@ def main():
     _write_manifest(t0, blocked=blocked)
     _print_summary()
     return 2 if blocked else 0
+
+
+def _remove_stale(*paths) -> None:
+    """Delete outputs a stage could not produce this time.
+
+    A CSV left behind by an earlier run is invisible in the current run but is
+    still read by the chart layer, which would then draw a figure from data the
+    pipeline no longer stands behind. Clearing them keeps every artefact
+    traceable to the run that produced it.
+    """
+    for path in paths:
+        try:
+            if path.exists():
+                path.unlink()
+                print(f"  removed stale {path.relative_to(ROOT)}")
+        except OSError:
+            pass
+
+
+def _write_missing_data_report(df):
+    """Record exactly which cells stop the scorecard from being computed.
+
+    When the pipeline is locked to verified values it can refuse to score at
+    all. Refusing is correct - but refusing *silently* is not, so this writes
+    the blocking cells to CSV and JSON, naming the bank, metric, year, current
+    status and what would unblock it. The run continues and exits normally; the
+    point is to hand over a worklist, not to stop the build.
+    """
+    import json
+
+    import pandas as pd
+
+    from src.config import TRUSTED_STATUSES
+
+    rows = []
+    for _, record_row in df[df["is_scored_metric"]].iterrows():
+        trusted = record_row["status"] in TRUSTED_STATUSES
+        has_value = bool(record_row["has_value"])
+        if trusted and has_value:
+            continue
+        if not has_value:
+            reason = "no value recorded - not found in the source documents"
+        elif not trusted:
+            reason = (f"status '{record_row['status']}' is not trusted while "
+                      "scoring is locked to verified values")
+        else:
+            reason = "excluded by an eligibility rule"
+        rows.append(dict(
+            bank=record_row["bank"], metric_code=record_row["metric_code"],
+            metric_name=record_row.get("metric_name", record_row["metric_code"]),
+            period_label=record_row["period_label"], status=record_row["status"],
+            page_number=record_row.get("page_number", ""),
+            document=record_row.get("document_title", ""),
+            reason=reason,
+            unblock="confirm the value against the cited page, then set status to "
+                    "'verified'",
+        ))
+
+    report = pd.DataFrame(rows)
+    csv_path = C.OUT_TABLES / "missing_data_report.csv"
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    report.to_csv(csv_path, index=False)
+
+    summary = {
+        "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "scoring_mode": ("locked to trusted values" if not C.ALLOW_UNVERIFIED_SCORING
+                         else "unverified values allowed"),
+        "trusted_statuses": sorted(TRUSTED_STATUSES),
+        "blocking_cells": int(len(report)),
+        "by_bank": report.groupby("bank").size().to_dict() if not report.empty else {},
+        "by_metric": (report.groupby("metric_code").size().to_dict()
+                      if not report.empty else {}),
+        "note": ("Every row here blocks the scorecard. A metric can only be scored "
+                 "when all three banks have a trusted value in the same year."),
+    }
+    json_path = ROOT / "outputs" / "missing_data_report.json"
+    json_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    return csv_path, json_path, len(report)
 
 
 def _write_manifest(t0, blocked):

@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-10-10T11:26:50Z",
+  "scoring_mode": "locked to trusted values",
+  "trusted_statuses": [
+    "manually_corrected",
+    "two_source_confirmed",
+    "verified"
+  ],
+  "blocking_cells": 56,
+  "by_bank": {
+    "HDFC": 20,
+    "ICICI": 16,
+    "SBI": 20
+  },
+  "by_metric": {
+    "gross_npa_pct": 15,
+    "net_npa_pct": 15,
+    "nim_pct": 5,
+    "roa_pct": 11,
+    "roe_pct": 10
+  },
+  "note": "Every row here blocks the scorecard. A metric can only be scored when all three banks have a trusted value in the same year."
+}

@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-10T11:19:36Z",
-  "runtime_seconds": 29.97,
+  "generated_utc": "2026-10-10T11:27:19Z",
+  "runtime_seconds": 28.86,
   "blocked": false,
   "python": "3.12.15",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
@@ -55,48 +55,28 @@
     },
     {
       "stage": "scorecard",
-      "status": "OK",
-      "detail": "primary window winner: ICICI; 15 bank-year rows"
+      "status": "WARN",
+      "detail": "no score produced: no metric has a trusted value for all three banks in the same year yet"
     },
     {
-      "stage": "scorecard/skipped",
+      "stage": "scorecard/missing_data",
       "status": "WARN",
-      "detail": "FY2022/nim_pct: only 1 bank(s) with a value"
-    },
-    {
-      "stage": "scorecard/skipped",
-      "status": "WARN",
-      "detail": "FY2023/nim_pct: only 1 bank(s) with a value"
-    },
-    {
-      "stage": "scorecard/skipped",
-      "status": "WARN",
-      "detail": "FY2024/nim_pct: only 1 bank(s) with a value"
-    },
-    {
-      "stage": "scorecard/skipped",
-      "status": "WARN",
-      "detail": "FY2025/nim_pct: only 1 bank(s) with a value"
-    },
-    {
-      "stage": "scorecard/skipped",
-      "status": "WARN",
-      "detail": "FY2026/nim_pct: only 1 bank(s) with a value"
+      "detail": "56 cell(s) block the scorecard -> outputs/tables/missing_data_report.csv and outputs/missing_data_report.json"
     },
     {
       "stage": "sensitivity",
-      "status": "OK",
-      "detail": "10000 draws (seed 42) + flip ranges + simplex grid"
+      "status": "WARN",
+      "detail": "no weights could be tested: no score computed yet"
     },
     {
       "stage": "tableau_export",
       "status": "OK",
-      "detail": "5 CSV(s); .hyper not installed - CSV only"
+      "detail": "2 CSV(s); .hyper not installed - CSV only"
     },
     {
       "stage": "charts",
       "status": "OK",
-      "detail": "10 chart(s) -> outputs/charts/"
+      "detail": "6 chart(s) -> outputs/charts/"
     },
     {
       "stage": "pdf_probe",
@@ -106,28 +86,19 @@
   ],
   "outputs": {
     "outputs/tables/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "outputs/tables/coverage_report.csv": "afd7870e0f9baea4381e05bc2ec5bdc235239f2a6a48b39bd760d7ccdc51f9ec",
+    "outputs/tables/coverage_report.csv": "a213800d6dd3b9b4a4b15845574e66b4d9429ed74cda99289f6392381e9679e7",
     "outputs/tables/dupont.csv": "0c8cfe1a25f7bd3f6657756e83cd2571c2bf001b08cd9fc27137e475ebf6ba70",
     "outputs/tables/extraction_candidates.csv": "d7c89e130c0d1207da68130a1ef6bae6c2c5aa4482ab348b90167246fb467e97",
     "outputs/tables/extraction_coverage.csv": "c06a958a7799a1dbfff9303f9f7cd89c2197b2ed2feb963f47d924aec1f81ceb",
     "outputs/tables/icici_manual_entry.csv": "ce1bbeae9744d496a81477237c94999c7cada44412be0cf7c6a04c1f7a92da1f",
-    "outputs/tables/metric_scores.csv": "d77b39bee5022b0a78a5fba2d024f97001d4cff4fab078a0e46c874cd1075446",
+    "outputs/tables/metric_scores.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "outputs/tables/missing_data_report.csv": "8fd33e415469b68ae8c70c360e98b0e517db5b07a99b7d9c733f5034e4cad00c",
     "outputs/tables/pdf_probe_report.csv": "3eb1c2e17aa2a12b51e6e7af6957bb57d545294964cb19341f81d0814bf5b87b",
     "outputs/tables/profit_quality.csv": "70c14fdbbc8db11ce33aa675b8988d2f916626576ee9aada89a4aea8c82d8d6c",
-    "outputs/tables/scorecard_primary_FY22_FY26.csv": "7a7cb5e52c26eb7d7ab748bf9c6977303c6b100c48af7bc3e426da25d03af661",
-    "outputs/tables/scorecard_summary_merger_clean.csv": "590efdff95db61643f76224e54093252bc61d1924693cfb764348064d7ab555e",
-    "outputs/tables/scorecard_summary_primary.csv": "b1bf2f5bb15bfdc98ffa988e6415598a49bdf852a7909e7d91de71d6b28d3cff",
-    "outputs/tables/sensitivity_flip_ranges.csv": "3facb008f3f8ac3c9d449d29eedbb3eff5c79031cd2cefd97529b2c8853cb812",
-    "outputs/tables/sensitivity_simplex_grid.csv": "d94ad1d80608de79824f01fa3d0d39bfe02951ff2f30d009c7010ccda985df92",
-    "outputs/tables/sensitivity_win_shares.csv": "17f82e77144c937e1e4678001e7ce80d6d403e51b42af31cc3ae1c0d9cdca9df",
     "outputs/tables/trends.csv": "37219ebf13e1d0b8a8d8a11ca67d725368a1bef3e502d305f201de5715657f92",
     "outputs/tables/validation_report.csv": "bba140432c76377dff24a01ea3c49159a8f0ed1557f2d86417dfe5f13028bbf9",
     "outputs/charts/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "outputs/charts/coverage_heatmap.png": "852fa57552a8fbeda94ef5a5aabc42773324258a8acdb20b1405e9c3b60e53c3",
-    "outputs/charts/hero_chart.png": "e792fb63d17bc35044b74f5088245c2241cac9ac9027d7b8ef35d9b93efc0649",
-    "outputs/charts/pillar_asset_quality.png": "f2751a522593b95b563556ec0bb6c6890f93c232c048f0781ce744319250ab01",
-    "outputs/charts/pillar_profit.png": "4da3543aca7b2c49c775e9d86441a07204360943057d1af594058295d79899b6",
-    "outputs/charts/sensitivity_chart.png": "34a74c3f194cfbbc15332aedc4a9cb5e7352d582ba6c000c8a1b33bb6ff26f98",
     "outputs/charts/trend_gross_npa_pct.png": "8c0a1a287d997f7fa3967b89d74935f27c29af52b2519a6120bfd791d5dd43ff",
     "outputs/charts/trend_net_npa_pct.png": "19b6affff9525991f428f30bd8a946bd0b244796538d3962385618f3af5b8bfe",
     "outputs/charts/trend_net_profit_inr.png": "0c21ffd0909fa3f6424f102aa01ffeb7fd1ffb966bb70c5243b7e00d61205a16",

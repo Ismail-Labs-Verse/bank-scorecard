@@ -1,19 +1,19 @@
 bank,metric_code,metric_name,rows,annual_years,with_value,unverified,score_eligible,sources
-HDFC,gross_npa_pct,Gross NPA %,5,5,5,0,5,5
-HDFC,net_npa_pct,Net NPA %,5,5,5,0,5,5
+HDFC,gross_npa_pct,Gross NPA %,5,5,5,0,0,5
+HDFC,net_npa_pct,Net NPA %,5,5,5,0,0,5
 HDFC,net_profit_inr,Net profit,5,5,5,0,0,5
 HDFC,nim_pct,Net interest margin,0,0,0,0,0,0
-HDFC,roa_pct,Return on assets,5,5,5,0,5,5
-HDFC,roe_pct,Return on equity,5,5,5,0,5,5
+HDFC,roa_pct,Return on assets,5,5,5,0,0,5
+HDFC,roe_pct,Return on equity,5,5,5,0,0,5
 ICICI,gross_npa_pct,Gross NPA %,5,5,0,0,0,1
-ICICI,net_npa_pct,Net NPA %,5,5,5,0,5,1
+ICICI,net_npa_pct,Net NPA %,5,5,5,0,0,1
 ICICI,net_profit_inr,Net profit,5,5,5,0,0,5
-ICICI,nim_pct,Net interest margin,5,5,5,0,5,1
+ICICI,nim_pct,Net interest margin,5,5,5,0,0,1
 ICICI,roa_pct,Return on assets,5,5,4,0,4,1
 ICICI,roe_pct,Return on equity,5,5,5,0,5,1
-SBI,gross_npa_pct,Gross NPA %,5,5,5,0,5,5
-SBI,net_npa_pct,Net NPA %,5,5,5,0,5,5
+SBI,gross_npa_pct,Gross NPA %,5,5,5,0,0,5
+SBI,net_npa_pct,Net NPA %,5,5,5,0,0,5
 SBI,net_profit_inr,Net profit,5,5,5,0,0,4
 SBI,nim_pct,Net interest margin,0,0,0,0,0,0
-SBI,roa_pct,Return on assets,5,5,5,0,5,5
-SBI,roe_pct,Return on equity,5,5,2,0,2,2
+SBI,roa_pct,Return on assets,5,5,5,0,0,5
+SBI,roe_pct,Return on equity,5,5,2,0,0,2

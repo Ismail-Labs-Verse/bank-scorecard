@@ -92,6 +92,20 @@ def _save(fig, name: str) -> Path:
     return path
 
 
+def _discard(name: str) -> None:
+    """Delete a figure this run cannot regenerate.
+
+    Without this, a chart written by an earlier run survives a run that no
+    longer produces its inputs, and the stale image is indistinguishable from a
+    current one. That is how a wrong chart reaches a README, so an unbuildable
+    figure is removed rather than left lying around.
+    """
+    path = OUT_CHARTS / name
+    if path.exists():
+        path.unlink()
+        print(f"  removed stale outputs/charts/{name} (not regenerated this run)")
+
+
 def _stamp(fig, text: str = PRELIMINARY_STAMP) -> None:
     """Mark a figure as built from unverified values, inside the image."""
     fig.text(0.5, 0.5, text, fontsize=26, color=GOLD, alpha=0.16,
@@ -256,10 +270,12 @@ def hero_chart() -> Path | None:
     path = OUT_TABLES / "scorecard_primary_FY22_FY26.csv"
     if not path.exists():
         print("  skip hero_chart: no scorecard output (no trusted values yet)")
+        _discard("hero_chart.png")
         return None
     scored = pd.read_csv(path, dtype=str, keep_default_na=False)
     if scored.empty or "overall" not in scored.columns:
         print("  skip hero_chart: scorecard is empty")
+        _discard("hero_chart.png")
         return None
     scored["overall"] = pd.to_numeric(scored["overall"], errors="coerce")
 
@@ -288,6 +304,8 @@ def pillar_charts() -> list[Path]:
     path = OUT_TABLES / "scorecard_primary_FY22_FY26.csv"
     if not path.exists():
         print("  skip pillar charts: no scorecard output (no trusted values yet)")
+        for pillar in ("asset_quality", "profit", "efficiency"):
+            _discard(f"pillar_{pillar}.png")
         return []
     scored = pd.read_csv(path, dtype=str, keep_default_na=False)
     made: list[Path] = []
@@ -295,6 +313,7 @@ def pillar_charts() -> list[Path]:
                           ("profit", "Profitability"),
                           ("efficiency", "Efficiency")):
         if pillar not in scored.columns:
+            _discard(f"pillar_{pillar}.png")
             continue
         frame = scored.copy()
         frame[pillar] = pd.to_numeric(frame[pillar], errors="coerce")
@@ -335,11 +354,13 @@ def dupont_chart() -> Path | None:
     data = data.dropna(subset=["roa_pct", "leverage_x"])
     if data.empty:
         print("  skip dupont_chart: no rows with both ROA and leverage")
+        _discard("dupont_chart.png")
         return None
 
     grouped = data.groupby("bank")[["roa_pct", "leverage_x"]].mean().reindex(BANKS).dropna()
     if grouped.empty:
         print("  skip dupont_chart: nothing to average")
+        _discard("dupont_chart.png")
         return None
 
     fig, ax = plt.subplots(figsize=(7.2, 4.2))
@@ -373,10 +394,12 @@ def sensitivity_chart() -> Path | None:
     path = OUT_TABLES / "sensitivity_win_shares.csv"
     if not path.exists():
         print("  skip sensitivity_chart: no sensitivity output (no scorecard yet)")
+        _discard("sensitivity_chart.png")
         return None
     shares = pd.read_csv(path, dtype=str, keep_default_na=False)
     if shares.empty or "p_rank1" not in shares.columns:
         print("  skip sensitivity_chart: sensitivity table is empty")
+        _discard("sensitivity_chart.png")
         return None
     shares["p_rank1"] = pd.to_numeric(shares["p_rank1"], errors="coerce")
 

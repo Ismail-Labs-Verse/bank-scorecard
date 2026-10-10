@@ -324,30 +324,29 @@ def _memo(styles) -> list:
 
     story.append(Paragraph("Position", styles["h2"]))
     story.append(Paragraph(
-        "<b>ICICI Bank leads the FY2022-FY2026 scorecard with a mean score of "
-        "66.2, against 61.1 for HDFC Bank and 27.4 for State Bank of India.</b> "
-        "The two leaders are strong in different places: ICICI on asset quality "
-        "(77.9 against 55.7 and 35.8) and HDFC Bank on profitability (65.8 "
-        "against 55.9 and 20.0). The merger-clean window of FY2024-FY2026 gives "
-        "the same winner at a wider margin - ICICI 81.5, SBI 45.6, HDFC Bank "
-        "35.2.", styles["body"]))
+        "<b>The scorecard is withheld, and the withholding is the finding.</b> "
+        "Scoring is locked to values a human has checked against a page. Of the "
+        "80 values this study needs, 10 have been checked. Because a metric can "
+        "only be scored when all three banks have a verified value in the same "
+        "financial year, the locked pipeline produces no score-eligible rows at "
+        "all - no overall scores, no pillar scores and no weight simulations.",
+        styles["body"]))
     story.append(Paragraph(
-        "The ranking is not an artefact of the chosen weights, but it is "
-        "conditional on them. Re-drawing the pillar weights 10,000 times from a "
-        "uniform distribution over the weight simplex puts ICICI Bank first in "
-        "69.7% of runs and HDFC Bank in 30.3%, while State Bank of India ranks "
-        "third in every single one. The condition is measurable: ICICI keeps the "
-        "lead for any asset-quality weight above 0.22, and raising the profit "
-        "pillar above 0.56 hands it to HDFC Bank. Efficiency carries no data "
-        "for any bank and contributes nothing.", styles["body"]))
+        "That outcome is reported rather than worked around, because the "
+        "alternative was measured and is worse. Automated extraction from these "
+        "annual reports produced figures that pass every shape check and are "
+        "wrong: State Bank of India's FY2023 net profit was read as 2,258 crore "
+        "against the 50,232 crore its profit and loss statement states, and a "
+        "\"profit increased by 12.88% to 80,032 crore\" sentence was read as a "
+        "profit of 12.88 crore. A plausible wrong number is more damaging than a "
+        "blank, so the pipeline refuses to score until the gaps are closed.",
+        styles["body"]))
     story.append(Paragraph(
-        "One qualification governs every figure above. The ICICI return figures "
-        "were read by hand from the annual reports, its net profit was read from "
-        "chart coordinates and is confirmed by up to five of its own reports, "
-        "and the remaining cells are machine-extracted and not yet checked line "
-        "by line against the pages they cite. Six ICICI cells are still blank. "
-        "The numbers are reported because the pipeline is complete and "
-        "reproducible, not because the extraction is finished.", styles["body"]))
+        "The worklist is 56 cells: 20 for HDFC Bank, 20 for State Bank of India "
+        "and 16 for ICICI Bank. By metric it is 15 gross NPA, 15 net NPA, 11 "
+        "return on assets, 10 return on equity and 5 net interest margin. Each "
+        "carries the bank, metric, year, current status and the page to check "
+        "in outputs/tables/missing_data_report.csv.", styles["body"]))
 
     story.append(Paragraph("Method", styles["h2"]))
     for line in (

@@ -70,15 +70,66 @@ def pillar_scores(ms: pd.DataFrame) -> pd.DataFrame:
 
 
 def overall_scores(ps: pd.DataFrame, weights=None) -> pd.DataFrame:
-    """Apply the pillar weights. This is the only part that depends on them."""
+    """Apply the pillar weights, on a basis that is the same for every bank.
+
+    THE MISSING-PILLAR PROBLEM
+    --------------------------
+    Dividing each bank's weighted total by the weights it personally has data
+    for is the obvious approach and it is wrong: a bank measured on two pillars
+    would be scored against a bank measured on three, and would not be
+    penalised for the gap. Two banks are only comparable if the same pillars
+    are used for both.
+
+    So a pillar is used for a given year only when **every** bank has a value
+    for it in that year. The remaining weights are then renormalised
+    proportionally over the pillars that survive. This study has no efficiency
+    data for any bank, so that pillar is dropped for every year and the 35/40/25
+    weights become a 35/40 pair scaled to sum to one - evenly applied, and
+    visible in the ``pillars_used`` and ``data_limitation`` columns.
+
+    Returns the pillar table with ``overall``, ``pillars_used`` and
+    ``data_limitation`` added.
+    """
     weights = weights or PILLAR_WEIGHTS
     if ps.empty:
-        return ps.assign(overall=[])
+        out = ps.copy()
+        out["overall"] = pd.Series(dtype=float)
+        out["pillars_used"] = pd.Series(dtype="Int64")
+        out["data_limitation"] = pd.Series(dtype=str)
+        return out
+
     out = ps.copy()
     present = [p for p in PILLARS if p in out.columns]
-    num = sum(weights[p] * out[p].fillna(0.0) for p in present)
-    den = sum(weights[p] * out[p].notna() for p in present)
-    out["overall"] = num / den.replace(0, float("nan"))
+
+    # Which pillars are complete for all banks, year by year.
+    usable_by_year: dict[str, list[str]] = {}
+    for period, group in out.groupby("period_label"):
+        usable_by_year[period] = [p for p in present if group[p].notna().all()]
+
+    totals: list[float] = []
+    counts: list[int] = []
+    for _, row in out.iterrows():
+        pillars = usable_by_year.get(row["period_label"], [])
+        if not pillars:
+            totals.append(float("nan"))
+            counts.append(0)
+            continue
+        numerator = sum(weights[p] * float(row[p]) for p in pillars)
+        denominator = sum(weights[p] for p in pillars)
+        totals.append(numerator / denominator)
+        counts.append(len(pillars))
+
+    out["overall"] = totals
+    out["pillars_used"] = pd.array(counts, dtype="Int64")
+
+    full_set = len(present)
+    out["data_limitation"] = [
+        ("" if n == full_set else
+         f"{full_set - n} of {full_set} pillars have no value for every bank; "
+         f"weights renormalised over the {n} pillar(s) available: "
+         f"{', '.join(usable_by_year.get(p, []))}")
+        for p, n in zip(out["period_label"], counts)
+    ]
     return out
 
 
@@ -100,6 +151,8 @@ def mean_by_bank(scored: pd.DataFrame) -> pd.DataFrame:
     for p in PILLARS:
         if p in scored.columns:
             out[p] = g[p].mean()
+    if "pillars_used" in scored.columns:
+        out["mean_pillars_used"] = g["pillars_used"].mean()
     return out.sort_values("mean_overall", ascending=False).reset_index()
 
 

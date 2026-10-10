@@ -43,7 +43,7 @@ SEED = 42
 # every score, ranking and chart downstream inherits them. Set it to False to
 # require human verification before anything enters the scorecard.
 # ---------------------------------------------------------------------------
-ALLOW_UNVERIFIED_SCORING = True
+ALLOW_UNVERIFIED_SCORING = False
 
 # NOTE ON THIS SWITCH (measured, not assumed):
 # With it set to False the pipeline has 0 score-eligible rows and produces no
