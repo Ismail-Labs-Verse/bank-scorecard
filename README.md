@@ -7,7 +7,8 @@
 ![Tableau](https://img.shields.io/badge/Tableau-Public-D4AF37?style=flat-square&logo=tableau&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-6B7A8F?style=flat-square)
 
-![Hero Chart](outputs/charts/hero_chart.png)
+<img src="outputs/charts/hero_chart.png" width="100%" alt="Hero Chart">
+
 
 ---
 
@@ -48,13 +49,13 @@ Most comparisons of this kind pick a set of weights, add up the scores and repor
 
 ## Visual gallery
 
-![Sensitivity Chart](outputs/charts/sensitivity_chart.png)
+<img src="outputs/charts/sensitivity_chart.png" width="100%" alt="Sensitivity Chart">
 
 *How often each bank finishes first across 10,000 randomised pillar weightings.*
 
-![Asset Quality Pillar](outputs/charts/pillar_asset_quality.png)
+<img src="outputs/charts/pillar_asset_quality.png" width="100%" alt="Asset Quality Pillar">
 
-![Profitability Pillar](outputs/charts/pillar_profit.png)
+<img src="outputs/charts/pillar_profit.png" width="100%" alt="Profitability Pillar">
 
 *Pillar scores are computed within each financial year, so the three banks span 0 to 100 in every period.*
 
