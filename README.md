@@ -59,6 +59,8 @@ Most comparisons of this kind pick a set of weights, add up the scores and repor
 
 *Pillar scores are computed within each financial year, so the three banks span 0 to 100 in every period.*
 
+<img width="1920" height="1243" alt="image" src="https://github.com/user-attachments/assets/a7d6db2c-4186-49de-9631-8ce0ef783ec0" />
+
 ---
 
 ## How to reproduce
