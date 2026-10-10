@@ -57,7 +57,21 @@ def main():
                     help="also scan data/raw/ for PDFs (candidate material only)")
     ap.add_argument("--verify-raw", action="store_true",
                     help="re-hash data/raw/ against the source log")
+    ap.add_argument("--provisional", action="store_true",
+                    help="score using machine-extracted values as well as verified "
+                         "ones. Off by default: the strict run refuses to rank banks "
+                         "from unchecked numbers. Use this to reproduce the charts "
+                         "published in the README.")
     args = ap.parse_args()
+
+    if args.provisional:
+        # Widen the trust set for this run only, so the default behaviour stays
+        # strict and the published figures stay reproducible on demand.
+        C.ALLOW_UNVERIFIED_SCORING = True
+        C.TRUSTED_STATUSES = set(C.TRUSTED_STATUSES) | {"auto_extracted",
+                                                        "ocr_extracted"}
+        print("NOTE: --provisional - scoring includes machine-extracted values "
+              "that no human has checked.\n")
 
     t0 = time.time()
     C.OUT_TABLES.mkdir(parents=True, exist_ok=True)
@@ -192,6 +206,7 @@ def main():
             C.OUT_TABLES / "sensitivity_flip_ranges.csv",
             C.OUT_TABLES / "sensitivity_simplex_grid.csv",
         )
+        _print_missing_table(df)
     else:
         w = S.winner(primary["scored"])
         record("scorecard", OK, f"primary window winner: {w}; "
@@ -325,6 +340,37 @@ def _write_missing_data_report(df):
     json_path = ROOT / "outputs" / "missing_data_report.json"
     json_path.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     return csv_path, json_path, len(report)
+
+
+def _print_missing_table(df) -> None:
+    """Print the blocking cells to the console, grouped, so the gap is readable.
+
+    A warning line saying "56 cells are missing" is not actionable. This prints
+    the bank-by-metric counts, so the work can be sized at a glance instead of
+    by opening a CSV.
+    """
+    from src.config import TRUSTED_STATUSES
+
+    blocked = df[df["is_scored_metric"]]
+    blocked = blocked[~(blocked["has_value"] & blocked["status"].isin(TRUSTED_STATUSES))]
+    if blocked.empty:
+        return
+
+    print()
+    print("  " + "-" * 70)
+    print("  METRICS BLOCKING THE SCORECARD")
+    print("  " + "-" * 70)
+    grid = blocked.pivot_table(index="metric_name", columns="bank",
+                               values="period_label", aggfunc="count").fillna(0)
+    header = "  " + "metric".ljust(34) + "".join(b.ljust(8) for b in grid.columns) + "total"
+    print(header)
+    for metric, row in grid.iterrows():
+        cells = "".join(str(int(row[b])).ljust(8) for b in grid.columns)
+        print("  " + str(metric)[:33].ljust(34) + cells + str(int(row.sum())))
+    print("  " + "-" * 70)
+    print(f"  {len(blocked)} cell(s) in total. Full detail, with the page to "
+          "check for each one, is in\n  outputs/tables/missing_data_report.csv")
+    print("  " + "-" * 70)
 
 
 def _write_manifest(t0, blocked):

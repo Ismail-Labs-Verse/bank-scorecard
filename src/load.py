@@ -12,7 +12,8 @@ A row with an EMPTY value and status UNVERIFIED is valid and meaningful: it says
 from __future__ import annotations
 import pandas as pd
 from src.config import (SOURCE_LOG, PROCESSED, ACCEPTED_UNITS, UNIT_TO_CRORE,
-                        METRICS, BASIS, TRUSTED_STATUSES)
+                        METRICS, BASIS)
+from src import config as C
 
 
 class SourceLogMissing(Exception):
@@ -105,7 +106,7 @@ def normalise(df: pd.DataFrame) -> pd.DataFrame:
     out["is_snapshot"] = out["period_type"] == "quarter"
     out["is_scored_metric"] = out["metric_code"].isin(METRICS) & out["metric_code"].map(
         lambda m: METRICS.get(m, {}).get("pillar") is not None)
-    out["is_trusted"] = out["status"].isin(TRUSTED_STATUSES)
+    out["is_trusted"] = out["status"].isin(C.TRUSTED_STATUSES)
     out["has_value"] = out["value_normalised"].notna()
     # A row may enter the scorecard ONLY if it is an annual, trusted, scored
     # metric with a real value. Everything else is context.
