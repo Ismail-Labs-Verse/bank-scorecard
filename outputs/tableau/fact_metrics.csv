@@ -1,0 +1,63 @@
+bank,basis,period_type,period_label,metric_code,metric_name,pillar,value_normalised,unit_normalised,status,verification_method,source_id
+HDFC,standalone,annual,FY2022,gross_npa_pct,Gross NPA %,asset_quality,1.17,pct,auto_extracted,automated_regex,HDFC-gross_npa_pct-FY2022--auto
+HDFC,standalone,annual,FY2023,gross_npa_pct,Gross NPA %,asset_quality,1.12,pct,auto_extracted,automated_regex,HDFC-gross_npa_pct-FY2023--auto
+HDFC,standalone,annual,FY2024,gross_npa_pct,Gross NPA %,asset_quality,1.24,pct,auto_extracted,automated_regex,HDFC-gross_npa_pct-FY2024--auto
+HDFC,standalone,annual,FY2025,gross_npa_pct,Gross NPA %,asset_quality,1.9,pct,auto_extracted,automated_regex,HDFC-gross_npa_pct-FY2025--auto
+HDFC,standalone,annual,FY2026,gross_npa_pct,Gross NPA %,asset_quality,2.26,pct,auto_extracted,automated_regex,HDFC-gross_npa_pct-FY2026--auto
+HDFC,standalone,annual,FY2022,net_npa_pct,Net NPA %,asset_quality,0.32,pct,auto_extracted,automated_regex,HDFC-net_npa_pct-FY2022--auto
+HDFC,standalone,annual,FY2023,net_npa_pct,Net NPA %,asset_quality,0.27,pct,auto_extracted,automated_regex,HDFC-net_npa_pct-FY2023--auto
+HDFC,standalone,annual,FY2024,net_npa_pct,Net NPA %,asset_quality,0.95,pct,auto_extracted,automated_regex,HDFC-net_npa_pct-FY2024--auto
+HDFC,standalone,annual,FY2025,net_npa_pct,Net NPA %,asset_quality,0.43,pct,auto_extracted,automated_regex,HDFC-net_npa_pct-FY2025--auto
+HDFC,standalone,annual,FY2026,net_npa_pct,Net NPA %,asset_quality,1.09,pct,auto_extracted,automated_regex,HDFC-net_npa_pct-FY2026--auto
+HDFC,standalone,annual,FY2022,net_profit_inr,Net profit,context,36961.3,INR_crore,auto_extracted,automated_regex,HDFC-net_profit_inr-FY2022--auto
+HDFC,standalone,annual,FY2023,net_profit_inr,Net profit,context,44108.7,INR_crore,auto_extracted,automated_regex,HDFC-net_profit_inr-FY2023--auto
+HDFC,standalone,annual,FY2024,net_profit_inr,Net profit,context,60812.3,INR_crore,auto_extracted,automated_regex,HDFC-net_profit_inr-FY2024--auto
+HDFC,standalone,annual,FY2025,net_profit_inr,Net profit,context,8133.46,INR_crore,auto_extracted,automated_regex,HDFC-net_profit_inr-FY2025--auto
+HDFC,standalone,annual,FY2026,net_profit_inr,Net profit,context,74671.3,INR_crore,auto_extracted,automated_regex,HDFC-net_profit_inr-FY2026--auto
+HDFC,standalone,annual,FY2022,roa_pct,Return on assets,profit,2.03,pct,auto_extracted,automated_regex,HDFC-roa_pct-FY2022--auto
+HDFC,standalone,annual,FY2023,roa_pct,Return on assets,profit,2.07,pct,auto_extracted,automated_regex,HDFC-roa_pct-FY2023--auto
+HDFC,standalone,annual,FY2024,roa_pct,Return on assets,profit,1.98,pct,auto_extracted,automated_regex,HDFC-roa_pct-FY2024--auto
+HDFC,standalone,annual,FY2025,roa_pct,Return on assets,profit,1.91,pct,auto_extracted,automated_regex,HDFC-roa_pct-FY2025--auto
+HDFC,standalone,annual,FY2026,roa_pct,Return on assets,profit,1.94,pct,auto_extracted,automated_regex,HDFC-roa_pct-FY2026--auto
+HDFC,standalone,annual,FY2022,roe_pct,Return on equity,profit,16.9,pct,auto_extracted,automated_regex,HDFC-roe_pct-FY2022--auto
+HDFC,standalone,annual,FY2023,roe_pct,Return on equity,profit,17.4,pct,auto_extracted,automated_regex,HDFC-roe_pct-FY2023--auto
+HDFC,standalone,annual,FY2024,roe_pct,Return on equity,profit,16.1,pct,auto_extracted,automated_regex,HDFC-roe_pct-FY2024--auto
+HDFC,standalone,annual,FY2025,roe_pct,Return on equity,profit,14.6,pct,auto_extracted,automated_regex,HDFC-roe_pct-FY2025--auto
+HDFC,standalone,annual,FY2026,roe_pct,Return on equity,profit,14.3,pct,auto_extracted,automated_regex,HDFC-roe_pct-FY2026--auto
+ICICI,standalone,annual,FY2022,net_npa_pct,Net NPA %,asset_quality,0.8,pct,ocr_extracted,coordinate_text,ICICI-net_npa_pct-FY2022--chart
+ICICI,standalone,annual,FY2023,net_npa_pct,Net NPA %,asset_quality,0.5,pct,ocr_extracted,coordinate_text,ICICI-net_npa_pct-FY2023--chart
+ICICI,standalone,annual,FY2024,net_npa_pct,Net NPA %,asset_quality,0.4,pct,ocr_extracted,coordinate_text,ICICI-net_npa_pct-FY2024--chart
+ICICI,standalone,annual,FY2025,net_npa_pct,Net NPA %,asset_quality,0.4,pct,ocr_extracted,coordinate_text,ICICI-net_npa_pct-FY2025--chart
+ICICI,standalone,annual,FY2026,net_npa_pct,Net NPA %,asset_quality,0.3,pct,ocr_extracted,coordinate_text,ICICI-net_npa_pct-FY2026--chart
+ICICI,standalone,annual,FY2022,net_profit_inr,Net profit,context,23339.0,INR_crore,ocr_extracted,coordinate_text,ICICI-net_profit_inr-FY2022--ocr--confirmed-5x
+ICICI,standalone,annual,FY2023,net_profit_inr,Net profit,context,31895.999999999996,INR_crore,ocr_extracted,coordinate_text,ICICI-net_profit_inr-FY2023--ocr--confirmed-4x
+ICICI,standalone,annual,FY2024,net_profit_inr,Net profit,context,40888.0,INR_crore,ocr_extracted,coordinate_text,ICICI-net_profit_inr-FY2024--ocr--confirmed-3x
+ICICI,standalone,annual,FY2025,net_profit_inr,Net profit,context,47227.0,INR_crore,ocr_extracted,coordinate_text,ICICI-net_profit_inr-FY2025--ocr--confirmed-2x
+ICICI,standalone,annual,FY2026,net_profit_inr,Net profit,context,50147.0,INR_crore,ocr_extracted,coordinate_text,ICICI-net_profit_inr-FY2026--ocr
+ICICI,standalone,annual,FY2022,nim_pct,Net interest margin,profit,3.96,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2022--chart
+ICICI,standalone,annual,FY2023,nim_pct,Net interest margin,profit,4.48,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2023--chart
+ICICI,standalone,annual,FY2024,nim_pct,Net interest margin,profit,4.53,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2024--chart
+ICICI,standalone,annual,FY2025,nim_pct,Net interest margin,profit,4.32,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2025--chart
+ICICI,standalone,annual,FY2026,nim_pct,Net interest margin,profit,4.32,pct,ocr_extracted,coordinate_text,ICICI-nim_pct-FY2026--chart
+SBI,standalone,annual,FY2022,gross_npa_pct,Gross NPA %,asset_quality,2.22,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2022--auto
+SBI,standalone,annual,FY2023,gross_npa_pct,Gross NPA %,asset_quality,2.35,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2023--auto
+SBI,standalone,annual,FY2024,gross_npa_pct,Gross NPA %,asset_quality,2.76,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2024--auto
+SBI,standalone,annual,FY2025,gross_npa_pct,Gross NPA %,asset_quality,1.82,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2025--auto
+SBI,standalone,annual,FY2026,gross_npa_pct,Gross NPA %,asset_quality,1.49,pct,auto_extracted,automated_regex,SBI-gross_npa_pct-FY2026--auto
+SBI,standalone,annual,FY2022,net_npa_pct,Net NPA %,asset_quality,1.02,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2022--auto
+SBI,standalone,annual,FY2023,net_npa_pct,Net NPA %,asset_quality,0.82,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2023--auto
+SBI,standalone,annual,FY2024,net_npa_pct,Net NPA %,asset_quality,0.57,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2024--auto
+SBI,standalone,annual,FY2025,net_npa_pct,Net NPA %,asset_quality,0.47,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2025--auto
+SBI,standalone,annual,FY2026,net_npa_pct,Net NPA %,asset_quality,0.39,pct,auto_extracted,automated_regex,SBI-net_npa_pct-FY2026--auto
+SBI,standalone,annual,FY2022,net_profit_inr,Net profit,context,31676.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2022--auto
+SBI,standalone,annual,FY2023,net_profit_inr,Net profit,context,2258.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2023--auto
+SBI,standalone,annual,FY2024,net_profit_inr,Net profit,context,13102.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2024--auto
+SBI,standalone,annual,FY2025,net_profit_inr,Net profit,context,70901.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2025--auto
+SBI,standalone,annual,FY2026,net_profit_inr,Net profit,context,80032.0,INR_crore,auto_extracted,automated_regex,SBI-net_profit_inr-FY2026--auto
+SBI,standalone,annual,FY2022,roa_pct,Return on assets,profit,0.67,pct,auto_extracted,automated_regex,SBI-roa_pct-FY2022--auto
+SBI,standalone,annual,FY2023,roa_pct,Return on assets,profit,1.0,pct,auto_extracted,automated_regex,SBI-roa_pct-FY2023--auto
+SBI,standalone,annual,FY2024,roa_pct,Return on assets,profit,1.36,pct,auto_extracted,automated_regex,SBI-roa_pct-FY2024--auto
+SBI,standalone,annual,FY2025,roa_pct,Return on assets,profit,1.1,pct,auto_extracted,automated_regex,SBI-roa_pct-FY2025--auto
+SBI,standalone,annual,FY2026,roa_pct,Return on assets,profit,1.12,pct,auto_extracted,automated_regex,SBI-roa_pct-FY2026--auto
+SBI,standalone,annual,FY2025,roe_pct,Return on equity,profit,18.57,pct,auto_extracted,automated_regex,SBI-roe_pct-FY2025--auto
+SBI,standalone,annual,FY2026,roe_pct,Return on equity,profit,18.57,pct,auto_extracted,automated_regex,SBI-roe_pct-FY2026--auto

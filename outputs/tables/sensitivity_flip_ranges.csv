@@ -1,0 +1,4 @@
+pillar,base_weight,winner,range_low,range_high,flips_at_low,flips_at_high
+asset_quality,0.35,HDFC,0.0,0.685,,HDFC -> ICICI
+profit,0.4,HDFC,0.14,1.0,HDFC -> ICICI,
+efficiency,0.25,HDFC,0.0,1.0,,

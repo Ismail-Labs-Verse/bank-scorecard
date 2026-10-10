@@ -1,0 +1,21 @@
+metric_code,metric_name,period_label,value_as_reported,unit_as_reported,document_title,page_number,notes
+gross_npa_pct,Gross NPA %,FY2022,,pct,ICICI_FY2022_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+gross_npa_pct,Gross NPA %,FY2023,,pct,ICICI_FY2023_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+gross_npa_pct,Gross NPA %,FY2024,,pct,ICICI_FY2024_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+gross_npa_pct,Gross NPA %,FY2025,,pct,ICICI_FY2025_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+gross_npa_pct,Gross NPA %,FY2026,,pct,ICICI_FY2026_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+net_npa_pct,Net NPA %,FY2022,,pct,ICICI_FY2022_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+net_npa_pct,Net NPA %,FY2023,,pct,ICICI_FY2023_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+net_npa_pct,Net NPA %,FY2024,,pct,ICICI_FY2024_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+net_npa_pct,Net NPA %,FY2025,,pct,ICICI_FY2025_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+net_npa_pct,Net NPA %,FY2026,,pct,ICICI_FY2026_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roa_pct,Return on assets,FY2022,,pct,ICICI_FY2022_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roa_pct,Return on assets,FY2023,,pct,ICICI_FY2023_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roa_pct,Return on assets,FY2024,,pct,ICICI_FY2024_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roa_pct,Return on assets,FY2025,,pct,ICICI_FY2025_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roa_pct,Return on assets,FY2026,,pct,ICICI_FY2026_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roe_pct,Return on equity,FY2022,,pct,ICICI_FY2022_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roe_pct,Return on equity,FY2023,,pct,ICICI_FY2023_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roe_pct,Return on equity,FY2024,,pct,ICICI_FY2024_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roe_pct,Return on equity,FY2025,,pct,ICICI_FY2025_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified
+roe_pct,Return on equity,FY2026,,pct,ICICI_FY2026_AR.pdf,,TYPE THE VALUE HERE -> then set status to verified

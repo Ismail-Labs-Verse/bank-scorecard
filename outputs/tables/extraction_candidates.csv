@@ -1,0 +1,312 @@
+metric,value,unit,year,confidence,doc,page,pattern,note,matched_line
+gross_npa_pct,1.17,pct,,UNRESOLVED,HDFC_FY22_AR.pdf,254,"gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Gross non-performing assets to gross advances1 1.17% 1.32%
+gross_npa_pct,1.12,pct,,UNRESOLVED,HDFC_FY23_AR.pdf,259,"gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Gross non-performing assets to gross advances1 1.12% 1.17%
+gross_npa_pct,1.23,pct,,UNRESOLVED,HDFC_FY24_AR.pdf,211,"\bGNPA\b [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,"Total GNPA as a Ratio of Customer Assets : 1.23 % ` Net Profit per Employee: 28,47,989.72 `"
+gross_npa_pct,1.24,pct,,UNRESOLVED,HDFC_FY24_AR.pdf,330,"gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Gross non-performing assets to gross advances1 1.24% 1.12%
+gross_npa_pct,1.33,pct,,UNRESOLVED,HDFC_FY25_AR.pdf,362,"gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Gross non-performing assets to gross advances1 1.33% 1.24%
+gross_npa_pct,1.15,pct,,UNRESOLVED,HDFC_FY26_AR.pdf,400,"gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Gross non-performing assets to gross advances1 1.15% 1.33%
+gross_npa_pct,2.0,pct,,UNRESOLVED,SBI_FY22_AR.pdf,51,"gross\s*npa [series, header unresolved]",multi-year row with 15 values and no resolvable column header - first value is NOT assumed to be the current year,"Gross NPA 2,23,427 1,72,750 1,49,092 1,26,389 1,12,023"
+gross_npa_pct,2.0,pct,,UNRESOLVED,SBI_FY23_AR.pdf,63,"gross\s*npa [series, header unresolved]",multi-year row with 17 values and no resolvable column header - first value is NOT assumed to be the current year,"Gross NPA 2,23,427 1,72,750 1,49,092 1,26,389 1,12,023 90,928"
+gross_npa_pct,19.0,pct,,UNRESOLVED,SBI_FY23_AR.pdf,189,"gross\s*npa [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,"Total Exposure to top twenty largest NPA exposure to Total Gross NPAs (` in Crore) 19,716.80 29,921.64"
+gross_npa_pct,1.0,pct,,UNRESOLVED,SBI_FY24_AR.pdf,69,"gross\s*npa [series, header unresolved]",multi-year row with 16 values and no resolvable column header - first value is NOT assumed to be the current year,"Gross NPA 1,72,750 1,49,092 1,26,389 1,12,023 90,928 84,276"
+gross_npa_pct,20.0,pct,,UNRESOLVED,SBI_FY24_AR.pdf,209,"gross\s*npa [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,"Total Exposure to top twenty largest NPA exposure to Total Gross NPAs (H in Crore) 20,415.45 19,716.80"
+gross_npa_pct,1.0,pct,,UNRESOLVED,SBI_FY25_AR.pdf,68,"gross\s*npa [series, header unresolved]",multi-year row with 15 values and no resolvable column header - first value is NOT assumed to be the current year,"Gross NPA 1,49,092 1,26,389 1,12,023 90,928 84,276 76,880"
+gross_npa_pct,22.0,pct,,UNRESOLVED,SBI_FY25_AR.pdf,217,"gross\s*npa [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,"Total Exposure to top twenty largest NPA exposure to Total Gross NPAs (H in Crore) 22,419.49 20,415.45"
+gross_npa_pct,1.0,pct,,UNRESOLVED,SBI_FY26_AR.pdf,81,"gross\s*npa [series, header unresolved]",multi-year row with 14 values and no resolvable column header - first value is NOT assumed to be the current year,"Gross NPA 1,26,389 1,12,023 90,928 84,276 76,880 73,452"
+gross_npa_pct,8.0,pct,,UNRESOLVED,SBI_FY26_AR.pdf,258,"gross\s*npa [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,"Total exposure to top twenty largest NPA exposure to Total Gross NPAs (` in Crore) 8,688.68 22,419.49"
+gross_npa_pct,10.91,pct,2018,MEDIUM,SBI_FY22_AR.pdf,51,gross\s*npa,"series row, column 1 of 5 dated by page header",Gross NPA 10.91% 7.53% 6.15% 4.98% 3.97%
+gross_npa_pct,10.91,pct,2018,MEDIUM,SBI_FY23_AR.pdf,63,gross\s*npa,"series row, column 1 of 6 dated by page header",Gross NPA% 10.91% 7.53% 6.15% 4.98% 3.97% 2.78%
+gross_npa_pct,7.53,pct,2019,MEDIUM,SBI_FY24_AR.pdf,69,gross\s*npa,"series row, column 1 of 6 dated by page header",Gross NPA% 7.53% 6.15% 4.98% 3.97% 2.78% 2.24%
+gross_npa_pct,6.15,pct,2020,MEDIUM,SBI_FY25_AR.pdf,68,gross\s*npa,"series row, column 1 of 6 dated by page header",Gross NPA% 6.15% 4.98% 3.97% 2.78% 2.24% 1.82%
+gross_npa_pct,4.98,pct,2021,MEDIUM,SBI_FY26_AR.pdf,81,gross\s*npa,"series row, column 1 of 6 dated by page header",Gross NPA% 4.98% 3.97% 2.78% 2.24% 1.82% 1.49%
+gross_npa_pct,1.17,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,17,\bGNPA\b,no year in the line; taken from the document year,in the quality of our assets and low GNPA ratio of 1.17%.
+gross_npa_pct,1.17,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,23,\bGNPA\b,no year in the line; taken from the document year,· GNPA: 1.17%
+gross_npa_pct,1.17,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,254,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross non-performing advances to gross advances 1.17% 1.31%
+gross_npa_pct,15.0,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,254,gross\s*npa,no year in the line; taken from the document year,and that for additional gross NPAs is 15 per cent of the published incremental Gross NPAs for the reference period.
+gross_npa_pct,2.0,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,273,gross\s*npa,no year in the line; taken from the document year,"shall be entertained. In case the bank’s post assessment Gross NPAs are less than 2.0%, these restrictions"
+gross_npa_pct,2.0,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,278,gross\s*npa,no year in the line; taken from the document year,"assessment Gross NPAs are less than 2.0%, these restrictions will apply only if criteria for public disclosure are triggered"
+gross_npa_pct,2.22,pct,2022,MEDIUM,SBI_FY22_AR.pdf,76,\bGNPA\b,no year in the line; taken from the document year,"• Asset quality: GNPA @ 2.22%, NNPA"
+gross_npa_pct,3.97,pct,2022,MEDIUM,SBI_FY22_AR.pdf,155,gross\s*npa,no year in the line; taken from the document year,Gross NPA to Gross Advances 3.97% 4.98%
+gross_npa_pct,3.92,pct,2022,MEDIUM,SBI_FY22_AR.pdf,270,gross\s*npa,no year in the line; taken from the document year,i) Gross NPAs to gross advances 3.92%
+gross_npa_pct,1.12,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,17,\bGNPA\b,no year in the line; taken from the document year,GNPA decreased to 1.12 per cent
+gross_npa_pct,1.12,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,21,\bGNPA\b,no year in the line; taken from the document year,(GNPA at 1.12%).
+gross_npa_pct,1.12,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,29,\bGNPA\b,no year in the line; taken from the document year,GNPA – 1.12%
+gross_npa_pct,1.5,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,46,\bGNPA\b,no year in the line; taken from the document year,a GNPA of 1.5% which is one of the
+gross_npa_pct,1.5,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,46,gross\s*npa,no year in the line; taken from the document year,Gross NPA ~1.5%
+gross_npa_pct,1.12,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,166,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross Non-Performing Assets (NPAs) at 1.12 per cent as against 1.17 per cent among the lowest in the
+gross_npa_pct,1.12,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,259,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross non-performing advances to gross advances 1.12% 1.17%
+gross_npa_pct,10.0,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,259,gross\s*npa,no year in the line; taken from the document year,and that for additional gross NPAs is 10 per cent of the published incremental Gross NPAs for the reference period.
+gross_npa_pct,13.2,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,266,gross\s*npa,no year in the line; taken from the document year,Percentage of exposures to the twenty largest NPA exposure to total Gross NPAs 13.2% 14.3%
+gross_npa_pct,2.0,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,285,gross\s*npa,no year in the line; taken from the document year,"the bank’s post assessment Gross NPAs are less than 2.0%, these restrictions will apply only if criteria for public"
+gross_npa_pct,2.35,pct,2023,MEDIUM,SBI_FY23_AR.pdf,97,\bGNPA\b,no year in the line; taken from the document year,"y Asset quality: GNPA @2.35%,"
+gross_npa_pct,2.78,pct,2023,MEDIUM,SBI_FY23_AR.pdf,184,gross\s*npa,no year in the line; taken from the document year,Gross NPA to Gross Advances 2.78% 3.97%
+gross_npa_pct,21.68,pct,2023,MEDIUM,SBI_FY23_AR.pdf,189,gross\s*npa,no year in the line; taken from the document year,Percentage of exposures to the twenty largest NPA accounts to total gross NPAs 21.68% 27.26%
+gross_npa_pct,2.75,pct,2023,MEDIUM,SBI_FY23_AR.pdf,304,gross\s*npa,no year in the line; taken from the document year,i) Gross NPAs to gross advances 2.75%
+gross_npa_pct,1.9,pct,2024,LOW,HDFC_FY24_AR.pdf,13,\bGNPA\b,no year in the line; taken from the document year; matched without a % sign,Performing Asset (GNPA) ratio at 1.90
+gross_npa_pct,1.65,pct,2024,LOW,HDFC_FY24_AR.pdf,61,\bGNPA\b,no year in the line; taken from the document year; matched without a % sign,past ten quarters with a GNPA of 1.65
+gross_npa_pct,1.24,pct,2024,LOW,HDFC_FY24_AR.pdf,211,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,Gross Non-Performing Assets (GNPAs) stood at 1.24 per
+gross_npa_pct,1.24,pct,2024,LOW,HDFC_FY24_AR.pdf,217,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,year. Gross Non-Performing Assets (GNPAs) were at 1.24
+gross_npa_pct,1.24,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,33,\bGNPA\b,no year in the line; taken from the document year,• GNPA - 1.24% and
+gross_npa_pct,1.24,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,211,gross\s*npa,no year in the line; taken from the document year,Gross NPA: 1.24 per cent of Gross Advances
+gross_npa_pct,1.24,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,211,gross\s*npa,no year in the line; taken from the document year,Gross NPA: 1.24 per cent of Gross Advances
+gross_npa_pct,1.24,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,330,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross non-performing advances to gross advances 1.24% 1.12%
+gross_npa_pct,5.0,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,334,gross\s*npa,no year in the line; taken from the document year,contingencies for the reference period and that for additional gross NPAs is 5 per cent (Previous year: 10 per cent) of
+gross_npa_pct,2.0,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,362,gross\s*npa,no year in the line; taken from the document year,"post assessment Gross NPAs are less than 2.0%, these restrictions will apply only if criteria for public disclosure are"
+gross_npa_pct,2.76,pct,2024,MEDIUM,SBI_FY24_AR.pdf,115,\bGNPA\b,no year in the line; taken from the document year,"• Asset quality: GNPA @2.76%,"
+gross_npa_pct,2.24,pct,2024,MEDIUM,SBI_FY24_AR.pdf,203,gross\s*npa,no year in the line; taken from the document year,Gross NPA to Gross Advances 2.24% 2.78%
+gross_npa_pct,24.22,pct,2024,MEDIUM,SBI_FY24_AR.pdf,209,gross\s*npa,no year in the line; taken from the document year,Percentage of exposures to the twenty largest NPA accounts to total gross NPAs 24.22% 21.68%
+gross_npa_pct,2.23,pct,2024,MEDIUM,SBI_FY24_AR.pdf,321,gross\s*npa,no year in the line; taken from the document year,i) Gross NPAs to gross advances 2.23%
+gross_npa_pct,1.9,pct,2025,HIGH,HDFC_FY25_AR.pdf,238,\bGNPA\b,year named nearest to the value,"per cent as on March 31, 2025. GNPA stood at 1.90 per cent"
+gross_npa_pct,1.33,pct,2025,LOW,HDFC_FY25_AR.pdf,204,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,Gross Non-Performing Assets (GNPAs) stood at 1.33 per
+gross_npa_pct,1.33,pct,2025,LOW,HDFC_FY25_AR.pdf,210,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,year. Gross Non-Performing Assets (GNPAs) were at 1.33
+gross_npa_pct,2.26,pct,2025,LOW,HDFC_FY25_AR.pdf,238,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,"robust, with Gross Non Performing Asset (GNPA) ratio at 2.26"
+gross_npa_pct,7.0,pct,2025,LOW,SBI_FY25_AR.pdf,18,gross\s*npa,no year in the line; taken from the document year; matched without a % sign,"gross NPA declined by ₹7,396 Crore to"
+gross_npa_pct,14.0,pct,2025,LOW,SBI_FY25_AR.pdf,41,gross\s*npa,no year in the line; taken from the document year; matched without a % sign,Gross NPA ratio also declined to 14-year
+gross_npa_pct,1.33,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,38,\bGNPA\b,no year in the line; taken from the document year,and GNPA stood at 1.33 per cent.
+gross_npa_pct,1.33,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,362,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross non-performing advances to gross advances 1.33% 1.24%
+gross_npa_pct,5.0,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,366,gross\s*npa,no year in the line; taken from the document year,reference period and that for additional gross NPAs is 5 per cent of the published incremental Gross NPAs for the
+gross_npa_pct,20.95,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,373,gross\s*npa,no year in the line; taken from the document year,Exposures of the twenty largest NPA as a percentage of total Gross NPAs. 20.95% 27.68%
+gross_npa_pct,2.0,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,387,gross\s*npa,no year in the line; taken from the document year,"entertained. In case the bank’s post assessment Gross NPAs are less than 2.0%, these restrictions will apply only"
+gross_npa_pct,2.0,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,395,gross\s*npa,no year in the line; taken from the document year,"post assessment Gross NPAs are less than 2.0%, these restrictions will apply only if criteria for public disclosure are"
+gross_npa_pct,3.29,pct,2025,MEDIUM,SBI_FY25_AR.pdf,115,gross\s*npa,no year in the line; taken from the document year,• Gross NPA: 3.29% (↓ from 3.53%)
+gross_npa_pct,3.08,pct,2025,MEDIUM,SBI_FY25_AR.pdf,120,\bGNPA\b,no year in the line; taken from the document year,"• Asset quality: GNPA @ 3.08%, NNPA"
+gross_npa_pct,1.82,pct,2025,MEDIUM,SBI_FY25_AR.pdf,210,gross\s*npa,no year in the line; taken from the document year,Gross NPA to Gross Advances 1.82% 2.24%
+gross_npa_pct,29.16,pct,2025,MEDIUM,SBI_FY25_AR.pdf,217,gross\s*npa,no year in the line; taken from the document year,Percentage of exposures to the twenty largest NPA accounts to total gross NPAs 29.16% 24.22%
+gross_npa_pct,1.82,pct,2025,MEDIUM,SBI_FY25_AR.pdf,332,gross\s*npa,no year in the line; taken from the document year,i) Gross NPAs to gross advances 1.82%
+gross_npa_pct,2.26,pct,2026,HIGH,HDFC_FY26_AR.pdf,280,\bGNPA\b,year named nearest to the value,"as on March 31, 2026. GNPA stood at 2.26 per cent and"
+gross_npa_pct,31.0,pct,2026,LOW,HDFC_FY26_AR.pdf,345,gross\s*npa,no year in the line; taken from the document year; matched without a % sign,"Identification of Non-performing Advances (“NPA”), Provisioning of NPA and Contingent Provision: Gross NPA as at 31 March 2026:"
+gross_npa_pct,31.0,pct,2026,LOW,HDFC_FY26_AR.pdf,458,gross\s*npa,no year in the line; taken from the document year; matched without a % sign,"Identification of Non-performing Advances (“NPA”), Provisioning of NPA and Contingent Provision: Gross NPA as at 31 March 2026:"
+gross_npa_pct,12.0,pct,2026,LOW,SBI_FY26_AR.pdf,52,gross\s*npa,no year in the line; taken from the document year; matched without a % sign,"a robust asset quality. Gross NPA reduced by 12 bps, from"
+gross_npa_pct,1.15,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,44,\bGNPA\b,no year in the line; taken from the document year,Tax grew by 10.9 per cent and GNPA stood at 1.15 per cent
+gross_npa_pct,2.44,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,54,\bGNPA\b,no year in the line; taken from the document year,Performing Asset (GNPA) ratio at 2.44 per cent and Net Non
+gross_npa_pct,2.26,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,54,\bGNPA\b,no year in the line; taken from the document year,"31, 2026. GNPA stood at 2.26 per cent and NNPA at 0.99 per"
+gross_npa_pct,2.15,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,253,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,"gross non-performing asset (GNPA) ratios remaining near multi￾year lows of 2.15 per cent as of September 2025, supported"
+gross_npa_pct,1.15,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,254,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross Non-Performing Assets (GNPAs) were at 1.15 per cent of
+gross_npa_pct,2.44,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,280,\bGNPA\b,no year in the line; taken from the document year,Performing Asset (GNPA) ratio stood at 2.44 per cent and
+gross_npa_pct,1.15,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,400,gross\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Gross non-performing advances to gross advances 1.15% 1.33%
+gross_npa_pct,11.85,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,409,gross\s*npa,no year in the line; taken from the document year,Exposures of the twenty largest NPA as a percentage of total gross NPAs 11.85% 20.95%
+gross_npa_pct,2.0,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,423,gross\s*npa,no year in the line; taken from the document year,"shall be entertained. In case the Bank’s post assessment Gross NPAs are less than 2.0%, these restrictions"
+gross_npa_pct,2.0,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,430,gross\s*npa,no year in the line; taken from the document year,"the bank’s post assessment Gross NPAs are less than 2.0%, these restrictions will apply only if criteria for public"
+gross_npa_pct,1.49,pct,2026,MEDIUM,SBI_FY26_AR.pdf,18,gross\s*npa,no year in the line; taken from the document year,"in asset quality. Gross NPA declined to 1.49%, recording an"
+gross_npa_pct,1.25,pct,2026,MEDIUM,SBI_FY26_AR.pdf,62,\bGNPA\b,no year in the line; taken from the document year,GNPA % 1.25% 1.18%
+gross_npa_pct,2.41,pct,2026,MEDIUM,SBI_FY26_AR.pdf,150,\bGNPA\b,no year in the line; taken from the document year,"y Asset quality: GNPA stood @ 2.41%, NNPA @ 1.04%,"
+gross_npa_pct,1.49,pct,2026,MEDIUM,SBI_FY26_AR.pdf,243,gross\s*npa,no year in the line; taken from the document year,Gross NPA to Gross Advances 1.49% 1.82%
+gross_npa_pct,11.83,pct,2026,MEDIUM,SBI_FY26_AR.pdf,258,gross\s*npa,no year in the line; taken from the document year,Percentage of exposures to the twenty largest NPA accounts to total gross NPAs 11.83% 29.16%
+gross_npa_pct,1.5,pct,2026,MEDIUM,SBI_FY26_AR.pdf,386,gross\s*npa,no year in the line; taken from the document year,i) Gross NPAs to gross advances 1.50%
+gross_npa_pct,1.49,pct,2026,MEDIUM,SBI_FY26_AR.pdf,470,gross\s*npa,no year in the line; taken from the document year,•	 Gross NPA: 1.49%
+net_npa_pct,0.33,pct,,UNRESOLVED,HDFC_FY24_AR.pdf,330,"net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,Net non-performing assets2 to net advances3 0.33% 0.27%
+net_npa_pct,0.43,pct,,UNRESOLVED,HDFC_FY25_AR.pdf,362,"net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,Net non-performing assets2 to net advances3 0.43% 0.33%
+net_npa_pct,0.99,pct,,UNRESOLVED,HDFC_FY26_AR.pdf,280,"\bNNPA\b [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,"NNPA at 0.99 per cent for the year ended March 31, 2025."
+net_npa_pct,0.38,pct,,UNRESOLVED,HDFC_FY26_AR.pdf,400,"net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)? [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,Net non-performing assets2 to net advances3 0.38% 0.43%
+net_npa_pct,2.1,pct,,UNRESOLVED,SBI_FY22_AR.pdf,16,"net\s*npa [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Net NPA to Net Advances (%) 2.1 2.57 2.12 3.81 3.71 5.73 3.01 2.23 1.50 1.02
+net_npa_pct,2.57,pct,,UNRESOLVED,SBI_FY23_AR.pdf,8,"net\s*npa [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Net NPA to Net Advances (%) 2.57 2.12 3.81 3.71 5.73 3.01 2.23 1.50 1.02 0.67
+net_npa_pct,1.0,pct,,UNRESOLVED,SBI_FY23_AR.pdf,63,"net\s*npa [series, header unresolved]",multi-year row with 13 values and no resolvable column header - first value is NOT assumed to be the current year,"Net NPA 1,10,855 65,895 51,871 36,810 27,966 21,467"
+net_npa_pct,2.12,pct,,UNRESOLVED,SBI_FY24_AR.pdf,8,"net\s*npa [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Net NPA to Net Advances (%) 2.12 3.81 3.71 5.73 3.01 2.23 1.50 1.02 0.67 0.57
+net_npa_pct,65.0,pct,,UNRESOLVED,SBI_FY24_AR.pdf,69,"net\s*npa [series, header unresolved]",multi-year row with 12 values and no resolvable column header - first value is NOT assumed to be the current year,"Net NPA 65,895 51,871 36,810 27,966 21,467 21,051"
+net_npa_pct,3.81,pct,,UNRESOLVED,SBI_FY25_AR.pdf,8,"net\s*npa [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Net NPA to Net Advances (%) 3.81 3.71 5.73 3.01 2.23 1.50 1.02 0.67 0.57 0.47
+net_npa_pct,51.0,pct,,UNRESOLVED,SBI_FY25_AR.pdf,68,"net\s*npa [series, header unresolved]",multi-year row with 12 values and no resolvable column header - first value is NOT assumed to be the current year,"Net NPA 51,871 36,810 27,966 21,467 21,051 19,667"
+net_npa_pct,3.71,pct,,UNRESOLVED,SBI_FY26_AR.pdf,10,"net\s*npa [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Net NPA to Net Advances (%) 3.71 5.73 3.01 2.23 1.50 1.02 0.67 0.57 0.47 0.39
+net_npa_pct,36.0,pct,,UNRESOLVED,SBI_FY26_AR.pdf,81,"net\s*npa [series, header unresolved]",multi-year row with 12 values and no resolvable column header - first value is NOT assumed to be the current year,"Net NPA 36,810 27,966 21,467 21,051 19,667 18,830"
+net_npa_pct,1.14,pct,,UNRESOLVED,ICICI_FY22_AR.pdf,9,"net\s*npa [series, header unresolved]",multi-year row with 6 values and no resolvable column header - first value is NOT assumed to be the current year,"• Net NPA ratio decreased from 1.14% at March 31, 2021 to 0.76% at March 31, 2022"
+net_npa_pct,0.76,pct,,UNRESOLVED,ICICI_FY23_AR.pdf.pdf,9,"net\s*npa [series, header unresolved]",multi-year row with 6 values and no resolvable column header - first value is NOT assumed to be the current year,"• Net NPA ratio decreased from 0.76% at March 31, 2022 to 0.48% at March 31, 2023"
+net_npa_pct,0.48,pct,,UNRESOLVED,ICICI_FY24_AR.pdf.pdf,9,"net\s*npa [series, header unresolved]",multi-year row with 6 values and no resolvable column header - first value is NOT assumed to be the current year,"• Net NPA ratio decreased from 0.48% at March 31, 2023 to 0.42% at March 31, 2024"
+net_npa_pct,0.42,pct,,UNRESOLVED,ICICI_FY25_AR.pdf.pdf,9,"net\s*npa [series, header unresolved]",multi-year row with 6 values and no resolvable column header - first value is NOT assumed to be the current year,"• Net NPA ratio decreased from 0.42% at March 31, 2024 to 0.39% at March 31, 2025"
+net_npa_pct,0.39,pct,,UNRESOLVED,ICICI_FY26_AR.pdf.pdf,12,"net\s*npa [series, header unresolved]",multi-year row with 6 values and no resolvable column header - first value is NOT assumed to be the current year,"• Net NPA ratio decreased from 0.39% at March 31, 2025 to 0.33% at March 31, 2026"
+net_npa_pct,5.73,pct,2018,MEDIUM,SBI_FY22_AR.pdf,51,net\s*npa,"series row, column 1 of 5 dated by page header",Net NPA 5.73% 3.01% 2.23% 1.50% 1.02%
+net_npa_pct,5.73,pct,2018,MEDIUM,SBI_FY23_AR.pdf,63,net\s*npa,"series row, column 1 of 6 dated by page header",Net NPA% 5.73% 3.01% 2.23% 1.50% 1.02% 0.67%
+net_npa_pct,3.01,pct,2019,MEDIUM,SBI_FY24_AR.pdf,69,net\s*npa,"series row, column 1 of 6 dated by page header",Net NPA% 3.01% 2.23% 1.50% 1.02% 0.67% 0.57%
+net_npa_pct,2.23,pct,2020,MEDIUM,SBI_FY25_AR.pdf,68,net\s*npa,"series row, column 1 of 6 dated by page header",Net NPA% 2.23% 1.50% 1.02% 0.67% 0.57% 0.47%
+net_npa_pct,1.5,pct,2021,MEDIUM,SBI_FY26_AR.pdf,81,net\s*npa,"series row, column 1 of 6 dated by page header",Net NPA% 1.50% 1.02% 0.67% 0.57% 0.47% 0.39%
+net_npa_pct,2.0,pct,2022,LOW,HDFC_FY22_AR.pdf,254,net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,Percentage of net non-performing assets2
+net_npa_pct,0.32,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,23,net\s*npa,no year in the line; taken from the document year,· Net NPA: 0.32%
+net_npa_pct,1.02,pct,2022,MEDIUM,SBI_FY22_AR.pdf,155,net\s*npa,no year in the line; taken from the document year,Net NPA to Net Advances 1.02% 1.50%
+net_npa_pct,1.0,pct,2022,MEDIUM,SBI_FY22_AR.pdf,270,net\s*npa,no year in the line; taken from the document year,ii) Net NPAs to net advances 1.00%
+net_npa_pct,2.0,pct,2023,LOW,HDFC_FY23_AR.pdf,259,net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,Net non-performing assets2
+net_npa_pct,0.27,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,29,net\s*npa,no year in the line; taken from the document year,Net NPA – 0.27%
+net_npa_pct,0.82,pct,2023,MEDIUM,SBI_FY23_AR.pdf,94,net\s*npa,no year in the line; taken from the document year,2022. The Net NPA stands at 0.82% as
+net_npa_pct,0.87,pct,2023,MEDIUM,SBI_FY23_AR.pdf,97,\bNNPA\b,no year in the line; taken from the document year,"NNPA @0.87%, GCL @5.9% v/s"
+net_npa_pct,0.67,pct,2023,MEDIUM,SBI_FY23_AR.pdf,184,net\s*npa,no year in the line; taken from the document year,Net NPA to Net Advances 0.67% 1.02%
+net_npa_pct,0.66,pct,2023,MEDIUM,SBI_FY23_AR.pdf,304,net\s*npa,no year in the line; taken from the document year,ii) Net NPAs to net advances 0.66%
+net_npa_pct,0.95,pct,2024,LOW,HDFC_FY24_AR.pdf,13,\bNNPA\b,no year in the line; taken from the document year; matched without a % sign,at 2.73 per cent and NNPA at 0.95
+net_npa_pct,0.63,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,13,\bNNPA\b,no year in the line; taken from the document year,Asset (NNPA) ratio at 0.63 per cent
+net_npa_pct,0.33,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,33,net\s*npa,no year in the line; taken from the document year,Net NPA – 0.33%
+net_npa_pct,0.33,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,217,net\s*npa,no year in the line; taken from the document year,previous year. Net NPA ratio stood at 0.33 per cent as against
+net_npa_pct,0.95,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,241,\bNNPA\b,no year in the line; taken from the document year,2.73 per cent and NNPA at 0.95 per cent for the year ended
+net_npa_pct,0.57,pct,2024,MEDIUM,SBI_FY24_AR.pdf,16,net\s*npa,no year in the line; taken from the document year,"YoY while the net NPA stood at 0.57%, an"
+net_npa_pct,0.76,pct,2024,MEDIUM,SBI_FY24_AR.pdf,42,net\s*npa,no year in the line; taken from the document year,Net NPA in Home loans to 0.76% as on
+net_npa_pct,0.99,pct,2024,MEDIUM,SBI_FY24_AR.pdf,115,\bNNPA\b,no year in the line; taken from the document year,"NNPA @0.99%, GCL @7.20% v/s"
+net_npa_pct,0.57,pct,2024,MEDIUM,SBI_FY24_AR.pdf,203,net\s*npa,no year in the line; taken from the document year,Net NPA to Net Advances 0.57% 0.67%
+net_npa_pct,0.56,pct,2024,MEDIUM,SBI_FY24_AR.pdf,321,net\s*npa,no year in the line; taken from the document year,ii) Net NPAs to net advances 0.56%
+net_npa_pct,0.99,pct,2025,LOW,HDFC_FY25_AR.pdf,238,net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year; matched without a % sign,per cent and Net Non Performing Asset (NNPA) ratio at 0.99
+net_npa_pct,0.43,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,52,net\s*npa,no year in the line; taken from the document year,− Net NPA – 0.43%
+net_npa_pct,0.43,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,210,net\s*npa,no year in the line; taken from the document year,previous year. Net NPA ratio stood at 0.43 per cent as against
+net_npa_pct,0.63,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,238,\bNNPA\b,no year in the line; taken from the document year,"and NNPA at 0.63 per cent for the year ended March 31,"
+net_npa_pct,0.47,pct,2025,MEDIUM,SBI_FY25_AR.pdf,18,net\s*npa,no year in the line; taken from the document year,"net NPA stood at 0.47%, an improvement"
+net_npa_pct,0.64,pct,2025,MEDIUM,SBI_FY25_AR.pdf,115,net\s*npa,no year in the line; taken from the document year,• Net NPA: 0.64% (↑ from 0.40%)
+net_npa_pct,0.47,pct,2025,MEDIUM,SBI_FY25_AR.pdf,210,net\s*npa,no year in the line; taken from the document year,Net NPA to Net Advances 0.47% 0.57%
+net_npa_pct,0.47,pct,2025,MEDIUM,SBI_FY25_AR.pdf,332,net\s*npa,no year in the line; taken from the document year,ii) Net NPAs to net advances 0.47%
+net_npa_pct,0.99,pct,2026,LOW,HDFC_FY26_AR.pdf,54,\bNNPA\b,no year in the line; taken from the document year; matched without a % sign,"31, 2026. GNPA stood at 2.26 per cent and NNPA at 0.99 per"
+net_npa_pct,19.0,pct,2026,LOW,SBI_FY26_AR.pdf,386,net\s*npa,no year in the line; taken from the document year; matched without a % sign,"g Net NPAs 19,163.28"
+net_npa_pct,1.09,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,54,\bNNPA\b,no year in the line; taken from the document year,Performing Asset (NNPA) ratio at 1.09 per cent as on March
+net_npa_pct,0.38,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,58,net\s*npa,no year in the line; taken from the document year,y Net NPA: 0.38%
+net_npa_pct,0.38,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,255,net\s*npa,no year in the line; taken from the document year,Net NPA ratio stood at 0.38 per cent as against 0.43 per cent in
+net_npa_pct,1.09,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,280,net\s*non[\s-]?performing\s*(?:assets|advances|loans|ratio)?,no year in the line; taken from the document year,Net Non Performing Asset (NNPA) ratio at 1.09 per cent
+net_npa_pct,0.39,pct,2026,MEDIUM,SBI_FY26_AR.pdf,18,net\s*npa,no year in the line; taken from the document year,"improvement of 33 bps (YoY), while Net NPA at 0.39% improved"
+net_npa_pct,0.13,pct,2026,MEDIUM,SBI_FY26_AR.pdf,47,net\s*npa,no year in the line; taken from the document year,quality and the net NPA of PSBs was in the range 0.13% to
+net_npa_pct,1.04,pct,2026,MEDIUM,SBI_FY26_AR.pdf,150,\bNNPA\b,no year in the line; taken from the document year,"y Asset quality: GNPA stood @ 2.41%, NNPA @ 1.04%,"
+net_npa_pct,0.39,pct,2026,MEDIUM,SBI_FY26_AR.pdf,243,net\s*npa,no year in the line; taken from the document year,Net NPA to Net Advances 0.39% 0.47%
+net_npa_pct,0.38,pct,2026,MEDIUM,SBI_FY26_AR.pdf,386,net\s*npa,no year in the line; taken from the document year,ii) Net NPAs to net advances 0.38%
+net_profit_inr,339.7,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,28,\bPAT\b,year named nearest to the value,posted a PAT of `339.70 crore for FY2022 as against
+net_profit_inr,131.0,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,28,net\s*profit,year named nearest to the value,generated a net profit of `131 crore in FY2022.
+net_profit_inr,1506.0,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,28,\bPAT\b,year named nearest to the value,"registered PAT of `1,506 crore in FY2022 against PAT"
+net_profit_inr,1070.65,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,28,\bPAT\b,year named nearest to the value,in FY2022. It posted PAT of `1070.65 crore during
+net_profit_inr,339.7,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,75,\bPAT\b,year named nearest to the value,a PAT of `339.70 crores for FY2022 as
+net_profit_inr,51.98,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,78,\bPAT\b,year named nearest to the value,PAT of `51.98 cr. in FY 2021-22 due to an
+net_profit_inr,31676.0,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,83,net\s*profit,year named nearest to the value,"to Net Profit of `31,676 Cr during FY22) as"
+net_profit_inr,31676.0,INR_crore,2022,HIGH,SBI_FY22_AR.pdf,83,net\s*profit,year named nearest to the value,"to Net Profit of `31,676 Cr during FY22) as"
+net_profit_inr,31676.0,INR_crore,2022,HIGH,SBI_FY23_AR.pdf,15,net\s*profit,year named nearest to the value,"net profit of `31,676 Crore (FY2022)."
+net_profit_inr,36961.3,INR_crore,2022,MEDIUM,HDFC_FY22_AR.pdf,129,net\s*profit,no year on the line; taken from the document year,"the Bank’s performance. Net Profit at ` 36,961.3 crore went up"
+net_profit_inr,984.34,INR_crore,2022,MEDIUM,HDFC_FY22_AR.pdf,148,net\s*profit,no year on the line; taken from the document year,year and Net Profit was ` 984.34 crore as against ` 703.22
+net_profit_inr,36693.0,INR_crore,2022,MEDIUM,HDFC_FY22_AR.pdf,160,net\s*profit,no year on the line; taken from the document year,"6. Average net profit of the company as per section 135(5): ` 36,693 Cr"
+net_profit_inr,733.86,INR_crore,2022,MEDIUM,HDFC_FY22_AR.pdf,160,net\s*profit,no year on the line; taken from the document year,7. (a) Two percent of average net profit of the company as per section 135(5): ` 733.86 Cr
+net_profit_inr,19951.0,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,16,net\s*profit,no year on the line; taken from the document year,"Net Profit Before Taxes (`in crore) 19,951 16,174 19,314 13,774 14,855 -15,528 1,607 25,063 27,541 43,422"
+net_profit_inr,14105.0,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,16,net\s*profit,no year on the line; taken from the document year,"Net Profit (`in crore) 14,105 10,891 13,102 9,951 10,484 -6,547 862 14,488 20,410 31,676"
+net_profit_inr,620.0,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,28,\bPAT\b,no year on the line; taken from the document year,posted a PAT of `620 crore against `527 crores in the
+net_profit_inr,233.01,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,28,net\s*profit,no year on the line; taken from the document year,"arm of SBI Group, posted a net profit of `233.01 crore"
+net_profit_inr,620.1,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,75,profit\s*after\s*tax,no year on the line; taken from the document year,posted a profit after tax of `620.10 crores
+net_profit_inr,15.71,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,75,net\s*profit,no year on the line; taken from the document year,STCL posted a Net Profit of `15.71 Crores
+net_profit_inr,1616.0,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,76,\bPAT\b,no year on the line; taken from the document year,"• Profitable operations: PAT `1,616 Cr,"
+net_profit_inr,25.26,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,76,\bPAT\b,no year on the line; taken from the document year,(PAT) of `25.26 crore for the year ended
+net_profit_inr,1070.65,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,77,\bPAT\b,no year on the line; taken from the document year,(PAT) of `1070.65 crore during the year
+net_profit_inr,1506.0,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,77,\bPAT\b,no year on the line; taken from the document year,"SBI Life witnessed a PAT of `1,506 crores"
+net_profit_inr,100.19,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,78,net\s*profit,no year on the line; taken from the document year,Company’s Net Profit stands at `100.19 Cr
+net_profit_inr,31675.98,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,180,net\s*profit,no year on the line; taken from the document year,"Net profit / (loss) (` in crore) 31,675.98 20,410.47"
+net_profit_inr,35373.88,INR_crore,2022,MEDIUM,SBI_FY22_AR.pdf,239,net\s*profit,no year on the line; taken from the document year,"Net Profit/(Loss) for the Group (` in crore) 35,373.88 22,405.45"
+net_profit_inr,725.39,INR_crore,2023,HIGH,SBI_FY23_AR.pdf,20,\bPAT\b,year named nearest to the value,tax (PAT) of `725.39 Crore for FY2023
+net_profit_inr,2258.0,INR_crore,2023,HIGH,SBI_FY23_AR.pdf,97,\bPAT\b,year named nearest to the value,"Tax (PAT) of `2,258 Crore in FY2023 as"
+net_profit_inr,1331.2,INR_crore,2023,HIGH,SBI_FY23_AR.pdf,101,\bPAT\b,year named nearest to the value,"PAT of `1,331.20 Crore for FY2023 as"
+net_profit_inr,44108.7,INR_crore,2023,MEDIUM,HDFC_FY23_AR.pdf,165,net\s*profit,no year on the line; taken from the document year,"Net Profit increased by 19.30 per cent to ` 44,108.70 crore from"
+net_profit_inr,777.2,INR_crore,2023,MEDIUM,HDFC_FY23_AR.pdf,189,net\s*profit,no year on the line; taken from the document year,and Net Profit was ` 777.2 crore as against ` 984.3 crore in
+net_profit_inr,41165.02,INR_crore,2023,MEDIUM,HDFC_FY23_AR.pdf,201,net\s*profit,no year on the line; taken from the document year,"a) Average net profit of the company as per sub-section (5) of section 135. INR 41,165.02 Cr"
+net_profit_inr,823.3,INR_crore,2023,MEDIUM,HDFC_FY23_AR.pdf,201,net\s*profit,no year on the line; taken from the document year,b) Two percent of average net profit of the company as per sub-section (5) of section 135. INR 823.30 Cr
+net_profit_inr,10891.0,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,8,net\s*profit,no year on the line; taken from the document year,"Net Profit (` in Crore) 10,891 13,102 9,951 10,484 -6,547 862 14,488 20,410 31,676 50,232"
+net_profit_inr,2258.0,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,20,\bPAT\b,no year on the line; taken from the document year,"Limited registered PAT of `2,258 Crore"
+net_profit_inr,53.51,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,20,net\s*profit,no year on the line; taken from the document year,has earned net profit of `53.51 Crore
+net_profit_inr,25.26,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,99,\bPAT\b,no year on the line; taken from the document year,After Tax (PAT) of `25.26 Crore
+net_profit_inr,1721.0,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,100,\bPAT\b,no year on the line; taken from the document year,"SBI Life generated a PAT of `1,721 Crore"
+net_profit_inr,50232.45,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,210,net\s*profit,no year on the line; taken from the document year,"Net profit/(loss) (` in Crore) 50,232.45 31,675.98"
+net_profit_inr,55648.17,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,274,net\s*profit,no year on the line; taken from the document year,"Net Profit/(Loss) for the Group (` in Crore) 55,648.17 35,373.88"
+net_profit_inr,1181.0,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,288,net\s*profit,no year on the line; taken from the document year,"net profit of `1,181.00 Crore for the year ended"
+net_profit_inr,10.45,INR_crore,2023,MEDIUM,SBI_FY23_AR.pdf,289,net\s*profit,no year on the line; taken from the document year,the Group’s share of net profit of `10.45 Crore for
+net_profit_inr,60812.3,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,210,net\s*profit,no year on the line; taken from the document year,"Net Profit increased by 37.9 per cent to ` 60,812.3 crore from"
+net_profit_inr,60812.0,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,211,net\s*profit,no year on the line; taken from the document year,"Net Revenue: 1,57,773 crore (YoY: 33.6 per cent) ` Net Profit : 60,812 crore (YoY: 37.9 per cent) `"
+net_profit_inr,60812.27,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,211,net\s*profit,no year on the line; taken from the document year,"Net Profit: 60,812.27 crore (YoY: 37.9 %) `"
+net_profit_inr,47513.87,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,261,net\s*profit,no year on the line; taken from the document year,"a) Average net profit of the company as per sub-section (5) of section 135. INR 47,513.87 Cr"
+net_profit_inr,950.28,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,261,net\s*profit,no year on the line; taken from the document year,b) Two percent of average net profit of the company as per sub-section (5) of section 135. INR 950.28 Cr
+net_profit_inr,3375.2,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,404,net\s*profit,no year on the line; taken from the document year,"crore, total net profit after tax of R 3,375.20 crore and net cash flows amounting to R 1,837.48 crore for the year ended"
+net_profit_inr,1459.65,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,404,profit\s*after\s*tax,no year on the line; taken from the document year,"profit after tax of R 1,459.65 crore and net cash flows amounting to R 164.34 crore for the period from July 1, 2023 to"
+net_profit_inr,1099.42,INR_crore,2024,MEDIUM,HDFC_FY24_AR.pdf,405,net\s*profit,no year on the line; taken from the document year,"net profit after tax of R 1,099.42 crore and net cash flows amounting to R 383.52 crore for the period from July 1, 2023"
+net_profit_inr,13102.0,INR_crore,2024,MEDIUM,SBI_FY24_AR.pdf,8,net\s*profit,no year on the line; taken from the document year,"Net Profit (H in Crore) 13,102 9,951 10,484 -6,547 862 14,488 20,410 31,676 50,232 61,077"
+net_profit_inr,61076.62,INR_crore,2024,MEDIUM,SBI_FY24_AR.pdf,231,net\s*profit,no year on the line; taken from the document year,"Net profit / (loss) (H in Crore) 61,076.62 50,232.45"
+net_profit_inr,67084.67,INR_crore,2024,MEDIUM,SBI_FY24_AR.pdf,293,net\s*profit,no year on the line; taken from the document year,"Net Profit/(Loss) for the Group (H in Crore) 67,084.67 55,648.17"
+net_profit_inr,8133.46,INR_crore,2025,HIGH,HDFC_FY25_AR.pdf,435,net\s*profit,year named nearest to the value,"as at March 31, 2025, total revenue of ` 135,536.03 crores, net profit after tax of ` 8,133.46 crores and net cash inflows"
+net_profit_inr,1916.0,INR_crore,2025,HIGH,SBI_FY25_AR.pdf,20,\bPAT\b,year named nearest to the value,"registered PAT of ₹1,916 Crore in FY2025."
+net_profit_inr,2531.0,INR_crore,2025,HIGH,SBI_FY25_AR.pdf,20,\bPAT\b,year named nearest to the value,"PAT of ₹2,531 Crore for FY2025 as against"
+net_profit_inr,70901.0,INR_crore,2025,HIGH,SBI_FY25_AR.pdf,418,net\s*profit,year named nearest to the value,"a net profit of ₹70,901 Crore in FY 2024-25, a"
+net_profit_inr,67347.4,INR_crore,2025,MEDIUM,HDFC_FY25_AR.pdf,203,net\s*profit,no year on the line; taken from the document year,"Net Profit increased by 10.7 per cent to ` 67,347.4 crore from"
+net_profit_inr,2176.0,INR_crore,2025,MEDIUM,HDFC_FY25_AR.pdf,238,profit\s*after\s*tax,no year on the line; taken from the document year,"The company’s Profit After Tax stood at ` 2,176 crore as on"
+net_profit_inr,1125.0,INR_crore,2025,MEDIUM,HDFC_FY25_AR.pdf,241,\bPAT\b,no year on the line; taken from the document year,"of 39.7 per cent. PAT for fiscal 2025 was ` 1,125 crore marking"
+net_profit_inr,53001.7,INR_crore,2025,MEDIUM,HDFC_FY25_AR.pdf,257,net\s*profit,no year on the line; taken from the document year,"a) Average net profit of the Bank as per sub-section (5) of section 135: INR 53,001.70 Cr"
+net_profit_inr,1060.03,INR_crore,2025,MEDIUM,HDFC_FY25_AR.pdf,257,net\s*profit,no year on the line; taken from the document year,"b) Two percent of average net profit of the Bank as per sub-section (5) of section 135: INR 1,060.03 Cr"
+net_profit_inr,9951.0,INR_crore,2025,MEDIUM,SBI_FY25_AR.pdf,8,net\s*profit,no year on the line; taken from the document year,"Net Profit (H in Crore) 9,951 10,484 -6,547 862 14,488 20,410 31,676 50,232 61,077 70,901"
+net_profit_inr,2413.0,INR_crore,2025,MEDIUM,SBI_FY25_AR.pdf,20,\bPAT\b,no year on the line; taken from the document year,"company generated a PAT of ₹2,413 Crore"
+net_profit_inr,72.0,INR_crore,2025,MEDIUM,SBI_FY25_AR.pdf,20,net\s*profit,no year on the line; taken from the document year,company reported a net profit of ₹72 Crore
+net_profit_inr,70900.63,INR_crore,2025,MEDIUM,SBI_FY25_AR.pdf,240,net\s*profit,no year on the line; taken from the document year,"Net profit / (loss) (H in Crore) 70,900.63 61,076.62"
+net_profit_inr,77561.34,INR_crore,2025,MEDIUM,SBI_FY25_AR.pdf,304,net\s*profit,no year on the line; taken from the document year,"Net Profit/(Loss) for the Group (Hin Crore) 77,561.34 67,084.67"
+net_profit_inr,70901.0,INR_crore,2025,MEDIUM,SBI_FY25_AR.pdf,413,net\s*profit,no year on the line; taken from the document year,"Net profit: ₹ 70,901 crore"
+net_profit_inr,80032.0,INR_crore,2026,HIGH,SBI_FY26_AR.pdf,48,net\s*profit,year named nearest to the value,"Net profit increased by 12.88% to ₹80,032 crore in FY 2026"
+net_profit_inr,795.38,INR_crore,2026,HIGH,SBI_FY26_AR.pdf,148,\bPAT\b,year named nearest to the value,"SBICAPS achieved PAT of ₹795.38 crore for FY 2026, as"
+net_profit_inr,593.59,INR_crore,2026,HIGH,SBI_FY26_AR.pdf,148,\bPAT\b,year named nearest to the value,"crore and PAT of ₹593.59 crore for FY 2026, as compared to"
+net_profit_inr,38.22,INR_crore,2026,HIGH,SBI_FY26_AR.pdf,149,\bPAT\b,year named nearest to the value,"and PAT of ₹38.22 crore during FY 2026, as compared to Gross"
+net_profit_inr,34.76,INR_crore,2026,HIGH,SBI_FY26_AR.pdf,149,\bPAT\b,year named nearest to the value,"crore and PAT of ₹34.76 crore for FY 2026, as against ₹69.17"
+net_profit_inr,3051.26,INR_crore,2026,HIGH,SBI_FY26_AR.pdf,154,\bPAT\b,year named nearest to the value,"SBIFML posted a PAT of ₹3,051.26 crore for FY 2026, as"
+net_profit_inr,74671.3,INR_crore,2026,MEDIUM,HDFC_FY26_AR.pdf,247,net\s*profit,no year on the line; taken from the document year,"Net Profit increased by 10.9 per cent to ` 74,671.3 crore from"
+net_profit_inr,2544.0,INR_crore,2026,MEDIUM,HDFC_FY26_AR.pdf,280,profit\s*after\s*tax,no year on the line; taken from the document year,"The company’s Profit After Tax stood at `2,544 crore as"
+net_profit_inr,65631.93,INR_crore,2026,MEDIUM,HDFC_FY26_AR.pdf,299,net\s*profit,no year on the line; taken from the document year,"5. a) Average net profit of the company as per sub-section (5) of section 135: INR 65,631.93 Cr"
+net_profit_inr,1312.64,INR_crore,2026,MEDIUM,HDFC_FY26_AR.pdf,299,net\s*profit,no year on the line; taken from the document year,"b) Two percent of average net profit of the company as per sub-section (5) of section 135: INR 1,312.64 Cr"
+net_profit_inr,74671.29,INR_crore,2026,MEDIUM,HDFC_FY26_AR.pdf,451,net\s*profit,no year on the line; taken from the document year,"per equity share is computed by dividing the net profit after tax of ` 74,671.29 crore (previous year: ` 67,347.36 crore) by the"
+net_profit_inr,14855.0,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,10,net\s*profit,no year on the line; taken from the document year,"Net Profit Before Taxes (₹ in crore) 14,855 -15,528 1,607 25,063 27,541 43,422 67,205 81,783 95,272 1,05,477"
+net_profit_inr,10484.0,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,10,net\s*profit,no year on the line; taken from the document year,"Net Profit (₹ in crore) 10,484 -6,547 862 14,488 20,410 31,676 50,232 61,077 70,901 80,032"
+net_profit_inr,590.7,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,148,\bPAT\b,no year on the line; taken from the document year,against PAT of ₹590.70 crore for the corresponding period in
+net_profit_inr,41.76,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,149,\bPAT\b,no year on the line; taken from the document year,Revenue of ₹123.52 crore and PAT of ₹41.76 crore during the
+net_profit_inr,36.49,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,149,\bPAT\b,no year on the line; taken from the document year,crore and PAT of ₹36.49 crore during the corresponding period
+net_profit_inr,2167.0,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,150,\bPAT\b,no year on the line; taken from the document year,"During the year, the Company reported PAT of ₹2,167 crore,"
+net_profit_inr,107.87,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,151,net\s*profit,no year on the line; taken from the document year,The Company reported a Net Profit of ₹107.87 crore during
+net_profit_inr,553.0,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,152,net\s*profit,no year on the line; taken from the document year,The Company reported a Net Profit of ₹553 crore for
+net_profit_inr,69.66,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,152,net\s*profit,no year on the line; taken from the document year,The Company posted a Net Profit of ₹69.66 crore for
+net_profit_inr,2470.0,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,153,\bPAT\b,no year on the line; taken from the document year,"YoY growth. The Company achieved a PAT of ₹2,470 crore in"
+net_profit_inr,74.18,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,155,net\s*profit,no year on the line; taken from the document year,The Company recorded a Net Profit of ₹74.18 crore for
+net_profit_inr,260.89,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,155,net\s*profit,no year on the line; taken from the document year,The Company reported a Net Profit of ₹260.89 crore for
+net_profit_inr,167.57,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,156,net\s*profit,no year on the line; taken from the document year,The Company earned a Net Profit of ₹167.57 crore for
+net_profit_inr,80032.01,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,285,net\s*profit,no year on the line; taken from the document year,"Net profit / (loss) (` in Crore ) 80,032.01 70,900.63"
+net_profit_inr,83298.78,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,354,net\s*profit,no year on the line; taken from the document year,"Net Profit/(Loss) for the Group (` in Crore) 83,298.78 77,561.34"
+net_profit_inr,80032.0,INR_crore,2026,MEDIUM,SBI_FY26_AR.pdf,470,net\s*profit,no year on the line; taken from the document year,"•	 Net Profit: ₹80,032 crore"
+roa_pct,2.03,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,23,return\s*on\s*assets?,no year in the line; taken from the document year,· Return on Asset: 2.03%
+roa_pct,2.03,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,265,return\s*on\s*assets?,no year in the line; taken from the document year,Return on assets (average) 2.03% 1.97%
+roa_pct,0.67,pct,2022,MEDIUM,SBI_FY22_AR.pdf,26,return\s*on\s*assets?,no year in the line; taken from the document year,Return on Assets increased by 19 bps to 0.67% in
+roa_pct,0.67,pct,2022,MEDIUM,SBI_FY22_AR.pdf,166,return\s*on\s*assets?,no year in the line; taken from the document year,vi. Return on Assets (on net-asset basis) 0.67% 0.48%
+roa_pct,2.07,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,17,\bROA\b,no year in the line; taken from the document year,(ROA) was 2.07 per cent while Return
+roa_pct,2.07,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,29,return\s*on\s*assets?,no year in the line; taken from the document year,Return on Assets – 2.07%
+roa_pct,3.0,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,46,\bROA\b,no year in the line; taken from the document year,Pre-tax ROA >3%
+roa_pct,2.07,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,271,return\s*on\s*assets?,no year in the line; taken from the document year,Return on assets (average) 2.07% 2.03%
+roa_pct,1.0,pct,2023,MEDIUM,SBI_FY23_AR.pdf,16,\bROA\b,no year in the line; taken from the document year,guidance of ROA of 1%+ was on track
+roa_pct,0.96,pct,2023,MEDIUM,SBI_FY23_AR.pdf,195,return\s*on\s*assets?,no year in the line; taken from the document year,vi. Return on Assets (on net-asset basis) 0.96% 0.67%
+roa_pct,1.98,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,367,return\s*on\s*assets?,no year in the line; taken from the document year,Return on assets (average) 1.98% 2.07%
+roa_pct,1.36,pct,2024,MEDIUM,SBI_FY24_AR.pdf,215,return\s*on\s*assets?,no year in the line; taken from the document year,vi. Return on Assets (on net-asset basis) 1.36% 0.96%
+roa_pct,1.91,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,399,return\s*on\s*assets?,no year in the line; taken from the document year,Return on assets (average) 1.91% 1.98%
+roa_pct,1.1,pct,2025,MEDIUM,SBI_FY25_AR.pdf,17,\bRoA\b,no year in the line; taken from the document year,on Assets (RoA) increased to 1.10% in
+roa_pct,1.0,pct,2025,MEDIUM,SBI_FY25_AR.pdf,17,\bRoA\b,no year in the line; taken from the document year,guidance of RoA of 1%+ has been on
+roa_pct,1.1,pct,2025,MEDIUM,SBI_FY25_AR.pdf,223,return\s*on\s*assets?,no year in the line; taken from the document year,vi. Return on Assets (on net-asset basis) 1.10% 1.04%
+roa_pct,1.1,pct,2025,MEDIUM,SBI_FY25_AR.pdf,403,return\s*on\s*assets?,no year in the line; taken from the document year,• Return on asset: 1.10%
+roa_pct,1.1,pct,2025,MEDIUM,SBI_FY25_AR.pdf,413,return\s*on\s*assets?,no year in the line; taken from the document year,Achieve Return on Assets of 1.10%
+roa_pct,1.1,pct,2025,MEDIUM,SBI_FY25_AR.pdf,413,\bRoA\b,no year in the line; taken from the document year,RoA: 1.10%
+roa_pct,1.12,pct,2026,HIGH,SBI_FY26_AR.pdf,17,return\s*on\s*assets?,year named nearest to the value,"Return on Assets (RoA) improved to 1.12% in FY 2026, against"
+roa_pct,1.94,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,435,return\s*on\s*assets?,no year in the line; taken from the document year,Return on assets (average) 1.94% 1.91%
+roa_pct,1.12,pct,2026,MEDIUM,SBI_FY26_AR.pdf,268,return\s*on\s*assets?,no year in the line; taken from the document year,vi. Return on Assets (on net-asset basis) 1.12% 1.10%
+roa_pct,1.12,pct,2026,MEDIUM,SBI_FY26_AR.pdf,470,return\s*on\s*assets?,no year in the line; taken from the document year,•	 Return on Assets: 1.12%
+roa_pct,1.12,pct,2026,MEDIUM,SBI_FY26_AR.pdf,478,return\s*on\s*assets?,no year in the line; taken from the document year,▶ Return on Assets: 1.12%.
+roa_pct,1.0,pct,2026,MEDIUM,SBI_FY26_AR.pdf,483,return\s*on\s*assets?,no year in the line; taken from the document year,customers registering a growth of 11% YOY. SBI continues to report Return on Assets greater than 1% whereas its
+roe_pct,20.07,pct,,UNRESOLVED,HDFC_FY22_AR.pdf,118,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity 20.07% 20.88% 20.36% 17.97% 18.04% 18.22% 16.30% 16.76% 16.60% 16.90%
+roe_pct,16.9,pct,,UNRESOLVED,HDFC_FY22_AR.pdf,265,"return\s*on\s*equity [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity Ratio7 16.90% 16.60%
+roe_pct,20.88,pct,,UNRESOLVED,HDFC_FY23_AR.pdf,152,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity 20.88% 20.36% 17.97% 18.04% 18.22% 16.30% 16.76% 16.60% 16.90% 17.39%
+roe_pct,17.39,pct,,UNRESOLVED,HDFC_FY23_AR.pdf,271,"return\s*on\s*equity [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity Ratio8 17.39% 16.90%
+roe_pct,20.36,pct,,UNRESOLVED,HDFC_FY24_AR.pdf,197,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity 20.36% 17.97% 18.04% 18.22% 16.30% 16.76% 16.60% 16.90% 17.39% 16.10%
+roe_pct,16.09,pct,,UNRESOLVED,HDFC_FY24_AR.pdf,367,"return\s*on\s*equity [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity Ratio8 16.09% 17.39%
+roe_pct,17.97,pct,,UNRESOLVED,HDFC_FY25_AR.pdf,194,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity 17.97% 18.04% 18.22% 16.30% 16.76% 16.60% 16.90% 17.39% 16.1% 14.56%
+roe_pct,14.56,pct,,UNRESOLVED,HDFC_FY25_AR.pdf,399,"return\s*on\s*equity [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity Ratio8 14.56% 16.09%
+roe_pct,18.04,pct,,UNRESOLVED,HDFC_FY26_AR.pdf,234,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity 18.04% 18.22% 16.30% 16.76% 16.60% 16.90% 17.39% 16.09% 14.56% 14.29%
+roe_pct,14.29,pct,,UNRESOLVED,HDFC_FY26_AR.pdf,435,"return\s*on\s*equity [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity Ratio8 14.29% 14.56%
+roe_pct,9.94,pct,,UNRESOLVED,SBI_FY22_AR.pdf,83,"\bROE\b [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,ROE 9.94 13.92 398 40.04
+roe_pct,10.49,pct,,UNRESOLVED,SBI_FY23_AR.pdf,8,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity (%) 10.49 11.17 7.74 7.25 -3.78 0.48 7.74 9.94 13.92 19.43
+roe_pct,13.92,pct,,UNRESOLVED,SBI_FY23_AR.pdf,104,"\bROE\b [series, header unresolved]",multi-year row with 4 values and no resolvable column header - first value is NOT assumed to be the current year,ROE 13.92 19.43 551 39.60
+roe_pct,11.17,pct,,UNRESOLVED,SBI_FY24_AR.pdf,8,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity (%) 11.17 7.74 7.25 -3.78 0.48 7.74 9.94 13.92 19.43 20.32
+roe_pct,7.74,pct,,UNRESOLVED,SBI_FY25_AR.pdf,8,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on equity (%) 7.74 7.25 -3.78 0.48 7.74 9.94 13.92 19.43 20.32 19.87
+roe_pct,7.25,pct,,UNRESOLVED,SBI_FY26_AR.pdf,10,"return\s*on\s*equity [series, header unresolved]",multi-year row with 10 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity (%) 7.25 -3.78 0.48 7.74 9.94 13.92 19.43 20.32 19.87 18.57
+roe_pct,18.57,pct,,UNRESOLVED,SBI_FY26_AR.pdf,483,"return\s*on\s*equity [series, header unresolved]",multi-year row with 3 values and no resolvable column header - first value is NOT assumed to be the current year,Return on Equity in FY 2025-26 was 18.57%.
+roe_pct,15.94,pct,2013,LOW,SBI_FY22_AR.pdf,16,return\s*on\s*equity,"series row, column 1 of 10 dated by page header; matched without a % sign",Return on equity (%) 15.94 10.49 11.17 7.74 7.25 -3.78 0.48 7.74 9.94 13.92
+roe_pct,16.9,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,11,\bROE\b,no year in the line; taken from the document year,2.03% and ROE at a healthy 16.9%. Our commitment to
+roe_pct,16.9,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,17,return\s*on\s*equity,no year in the line; taken from the document year,18.8% and return on equity has increased to 16.9%.
+roe_pct,16.9,pct,2022,MEDIUM,HDFC_FY22_AR.pdf,23,return\s*on\s*equity,no year in the line; taken from the document year,· Return on Equity: 16.9%
+roe_pct,17.4,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,21,\bRoE\b,no year in the line; taken from the document year,"shareholders, with an RoE of 17.4%."
+roe_pct,17.4,pct,2023,MEDIUM,HDFC_FY23_AR.pdf,29,return\s*on\s*equity,no year in the line; taken from the document year,Return on Equity – 17.4%
+roe_pct,16.1,pct,2024,MEDIUM,HDFC_FY24_AR.pdf,33,return\s*on\s*equity,no year in the line; taken from the document year,• Return on Equity – 16.1%
+roe_pct,18.57,pct,2025,HIGH,SBI_FY26_AR.pdf,17,return\s*on\s*equity,year named nearest to the value,1.10% for FY 2025. Return on Equity (RoE) at 18.57% for
+roe_pct,20.5,pct,2025,LOW,SBI_FY25_AR.pdf,413,return\s*on\s*equity,no year in the line; taken from the document year; matched without a % sign,Attain Return on Equity of 20.50.
+roe_pct,14.6,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,38,\bROE\b,no year in the line; taken from the document year,ROE of 14.6 per cent. The Earnings Per Share (EPS)
+roe_pct,14.6,pct,2025,MEDIUM,HDFC_FY25_AR.pdf,52,return\s*on\s*equity,no year in the line; taken from the document year,− Return on Equity – 14.6%
+roe_pct,19.87,pct,2025,MEDIUM,SBI_FY25_AR.pdf,403,return\s*on\s*equity,no year in the line; taken from the document year,• Return on equity: 19.87%
+roe_pct,19.87,pct,2025,MEDIUM,SBI_FY25_AR.pdf,403,return\s*on\s*equity,no year in the line; taken from the document year,• Return on Equity: 19.87%
+roe_pct,19.87,pct,2025,MEDIUM,SBI_FY25_AR.pdf,413,\bRoE\b,no year in the line; taken from the document year,RoE: 19.87%
+roe_pct,14.3,pct,2026,MEDIUM,HDFC_FY26_AR.pdf,58,return\s*on\s*equity,no year in the line; taken from the document year,y Return on Equity: 14.3%
+roe_pct,18.57,pct,2026,MEDIUM,SBI_FY26_AR.pdf,470,return\s*on\s*equity,no year in the line; taken from the document year,•	 Return on Equity: 18.57%
+roe_pct,18.57,pct,2026,MEDIUM,SBI_FY26_AR.pdf,478,return\s*on\s*equity,no year in the line; taken from the document year,▶ Return on Equity: 18.57%.

@@ -1,0 +1,97 @@
+MANUAL DOWNLOAD WORKLIST
+=======================
+Project : Bank Scorecard (SBI vs HDFC Bank vs ICICI Bank)
+Created : 2026-10-10
+Why     : These hosts block automated download from this machine. Verified failures
+          are recorded below. Please open each URL in your own browser (a real
+          browser session passes the check that blocks the script), save the PDF
+          into the folder shown, then tell me and I will hash + parse them.
+
+-------------------------------------------------------------------------------
+STATUS: WHAT ALREADY WORKS AUTOMATICALLY (no action needed from you)
+-------------------------------------------------------------------------------
+ICICI Bank downloads work end to end. Already fetched and verified as real PDFs:
+  data/raw/icici/financial-results-q1-2027.pdf                       (344,867 bytes)
+  data/raw/icici/2026-07-Q1-2027-Investor-presentation.pdf           (989,175 bytes, 59 pages)
+ICICI IR page reachable at: https://www.icicibank.com/about-us/investor-relations
+ICICI PDF pattern: https://www.icicibank.com/content/dam/icicibank/india/managed-assets/docs/about-us/<YEAR>/<FILE>.pdf
+
+-------------------------------------------------------------------------------
+1) HDFC BANK  -> save into  data/raw/hdfc/
+-------------------------------------------------------------------------------
+Blocked: HTTP 403 from the CDN, and http=000 (connection dropped) on the API path.
+Tested and FAILED on 2026-10-10 (with a full Chrome User-Agent, so it is not a
+User-Agent problem):
+  A) https://www.hdfcbank.com/content/api/contentmanagement/DownloadFile?path=/content/dam/hdfcbankpws/internet/others/pdf/investor-relations/financial-results/2026/hdfc-bank-earnings-jul18-2026.pdf  -> http=000
+  B) same API with the real dam path -> http=000
+  C) direct dam URL + Referer -> http=403
+The IR *page* itself is readable (HTTP 200), which is how I harvested the file
+names below. These filenames are real; they came out of HDFC's own HTML.
+
+Listing page to open: https://www.hdfcbank.com/personal/about-us/investor-relations/financial-results
+URL base: https://www.hdfcbank.com/content/dam/hdfcbankpws/in/en/pdf/about-us/financial-results/
+
+  FY2027 Q1 (Apr-Jun 2026) - needed for the latest-quarter snapshot:
+    2026-2027/quarter-1/financial-results-for-the-quarter-ended-june-30-2026.pdf
+    2026-2027/quarter-1/key-parameters-financial-results-for-the-quarter-ended-june-30-2026.pdf
+    2026-2027/quarter-1/hdfc-bank-earnings-jul18-2026.pdf
+    2026-2027/quarter-1/press-release-june-2026.pdf
+    2026-2027/quarter-1/q1fy27-earnings-presentation.pdf
+
+  FY2026 Q4 (full year, ended 31 Mar 2026) - the most important file set:
+    2025-2026/quarter-4/financial-results-for-the-quarter-and-year-ended-March-31-2026.pdf
+    2025-2026/quarter-4/key-parameters-financial-results-for-the-quarter-ended-march-31-2026.pdf
+    2025-2026/quarter-4/press-release-march-2026.pdf
+    2025-2026/quarter-4/q4fy26-earnings-presentation.pdf
+    2025-2026/quarter-4/HDFCBank-Analyst-Apr18-2026-vF.pdf
+
+  STILL MISSING (could not enumerate): the Q4/full-year files for FY2022, FY2023,
+  FY2024 and FY2025. They sit behind the "Financial Year" dropdown on the listing
+  page, which is built by JavaScript, so the file names are not in the HTML.
+  In your browser: open the listing page, pick each financial year in the dropdown,
+  and download that year's "Financial Results", "Key Parameters" and "Press Release".
+
+-------------------------------------------------------------------------------
+2) STATE BANK OF INDIA -> save into  data/raw/sbi/
+-------------------------------------------------------------------------------
+Blocked: the IR pages load (HTTP 200) but every PDF link on them is rendered by
+JavaScript, so the file URLs are not in the page HTML. The only .pdf links present
+are site-wide footer documents unrelated to results. Not tested for download.
+Note: sbi.co.in/web/investor-relations/financial-results returns 404 - use the
+host sbi.bank.in instead.
+
+Working entry points (open these in your browser):
+  https://sbi.bank.in/web/investor-relations
+  https://sbi.bank.in/web/investor-relations/sbi-financial-highlights-past-5
+  https://sbi.bank.in/web/investor-relations/analyst-presentation
+  https://sbi.bank.in/web/investor-relations/annual-report
+
+Wanted per year FY2022..FY2026 plus Q1 FY2027:
+  - Quarterly/annual financial results (standalone)
+  - Press release with the ratio table
+  - SBI annual report (for the Basel III / Pillar 3 numbers)
+  Tip: "SBI Financial Highlights - past 5" is one page with the 5-year series.
+
+-------------------------------------------------------------------------------
+3) RESERVE BANK OF INDIA -> save into  data/raw/rbi/
+-------------------------------------------------------------------------------
+Blocked: rbidocs.rbi.org.in returns HTTP 200 but with content-type text/html and a
+JavaScript bot-challenge body instead of the PDF. Tested 2026-10-10 and failed.
+The www.rbi.org.in HTML pages ARE readable (the press-release index worked).
+The DBIE database (data.rbi.org.in) is a JavaScript application and cannot be
+scraped from here either.
+
+Wanted (latest available edition of each):
+  - Report on Trend and Progress of Banking in India  (system GNPA, CRAR)
+  - Financial Stability Report                        (SCB stress numbers)
+  - DBIE extract: gross NPA ratio, credit growth and deposit growth (SCBs)
+  Note: these are published with a lag, so the FY2026 system numbers may not
+  exist yet. If not, I will use the newest published year and label it clearly.
+
+-------------------------------------------------------------------------------
+RULES FOR FILING THESE FILES
+-------------------------------------------------------------------------------
+- Filenames: keep them exactly as the bank named them. Do not rename.
+- Folders: data/raw/hdfc/ , data/raw/sbi/ , data/raw/rbi/  (create if missing).
+- Do NOT commit these files to GitHub. data/raw/ is already in .gitignore.
+- Tell me when files are in place and I will record SHA-256 hashes and parse them.

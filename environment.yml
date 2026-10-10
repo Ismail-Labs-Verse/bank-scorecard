@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------------------
+# Bank Scorecard - project environment
+#
+# Build it with:
+#   /opt/anaconda3/bin/conda env create -f environment.yml
+#   /opt/anaconda3/bin/conda activate bank-scorecard
+#
+# WHY THIS FILE IS HAND-WRITTEN INSTEAD OF `conda env export`:
+#   `conda env export` dumps whichever environment is active (here: Anaconda
+#   base with ~500 packages and platform-specific build strings). That is a
+#   machine snapshot, not a project definition - it would not rebuild this
+#   project on another Mac and it hides which packages we actually depend on.
+#   The base snapshot is kept separately in environment-lock.yml for audit.
+#
+# WHY python=3.12 AND NOT 3.14:
+#   Anaconda base on this machine is Python 3.14.6. Several scientific
+#   libraries do not yet ship pre-built Apple-Silicon (arm64) wheels for 3.14,
+#   so installs would fall back to compiling from source and often fail.
+#   Python 3.12 has the widest arm64 wheel coverage.
+#
+# PINS: ranges below are deliberately safe. After the first successful
+# environment solve we freeze the exact resolved versions into
+# environment-lock.yml (`conda env export --no-builds`).
+# ---------------------------------------------------------------------------
+name: bank-scorecard
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+
+  # --- data handling ---
+  - pandas>=2.2,<3
+  - numpy>=1.26,<3
+
+  # --- primary sources are PDFs ---
+  - pdfplumber>=0.11,<1     # table-aware PDF text extraction
+  - pypdf>=4.3,<6           # page-level extraction / metadata
+
+  # --- charts ---
+  - matplotlib>=3.8,<4
+
+  # --- output documents ---
+  - reportlab>=4,<5         # builds the two PDFs, pure Python (no brew deps)
+
+  # --- notebooks ---
+  - jupyterlab>=4,<5
+  - ipykernel>=6.29,<7
+
+  # --- tests ---
+  - pytest>=8,<9
+
+  # --- config / tokens ---
+  - pyyaml>=6,<7

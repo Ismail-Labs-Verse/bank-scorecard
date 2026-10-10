@@ -1,0 +1,9 @@
+status,check,detail
+PASS,schema,all status/verification/metric values are known
+PASS,no_missing_years,every started metric covers FY2022-FY2026
+PASS,net_npa_le_gross_npa,Net NPA never exceeds Gross NPA
+PASS,impossible_values,no impossible level values
+PASS,plausible_values,no values need a second look
+SKIP,roa_recompute,needs roa_pct + net_profit_inr + total_assets_inr for two consecutive years; not enough in the source log yet
+SKIP,pl_ladder,needs NII + other income + operating expenses + provisions + net profit; not enough in the source log yet
+PASS,units,all scored metrics are percentages in one raw unit

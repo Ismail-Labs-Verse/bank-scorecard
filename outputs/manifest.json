@@ -1,0 +1,148 @@
+{
+  "generated_utc": "2026-10-10T10:41:11Z",
+  "runtime_seconds": 29.79,
+  "blocked": false,
+  "python": "3.12.15",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "seed": 42,
+  "pillar_weights": {
+    "asset_quality": 0.35,
+    "profit": 0.4,
+    "efficiency": 0.25
+  },
+  "window_primary": [
+    "FY2022",
+    "FY2023",
+    "FY2024",
+    "FY2025",
+    "FY2026"
+  ],
+  "window_clean": [
+    "FY2024",
+    "FY2025",
+    "FY2026"
+  ],
+  "stages": [
+    {
+      "stage": "load_source_log",
+      "status": "OK",
+      "detail": "80 rows read, 80 distinct source_id"
+    },
+    {
+      "stage": "validate",
+      "status": "OK",
+      "detail": "8 checks, 0 warning(s)"
+    },
+    {
+      "stage": "coverage",
+      "status": "OK",
+      "detail": "18 bank/metric series -> outputs/tables/coverage_report.csv"
+    },
+    {
+      "stage": "metrics_trends",
+      "status": "OK",
+      "detail": "62 rows -> outputs/tables/trends.csv"
+    },
+    {
+      "stage": "dupont",
+      "status": "OK",
+      "detail": "15 bank-year rows"
+    },
+    {
+      "stage": "profit_quality",
+      "status": "OK",
+      "detail": "15 bank-year row(s), 2 flagged as merger-affected"
+    },
+    {
+      "stage": "scorecard",
+      "status": "OK",
+      "detail": "primary window winner: ICICI; 15 bank-year rows"
+    },
+    {
+      "stage": "scorecard/skipped",
+      "status": "WARN",
+      "detail": "FY2022/nim_pct: only 1 bank(s) with a value"
+    },
+    {
+      "stage": "scorecard/skipped",
+      "status": "WARN",
+      "detail": "FY2022/roe_pct: only 1 bank(s) with a value"
+    },
+    {
+      "stage": "scorecard/skipped",
+      "status": "WARN",
+      "detail": "FY2023/nim_pct: only 1 bank(s) with a value"
+    },
+    {
+      "stage": "scorecard/skipped",
+      "status": "WARN",
+      "detail": "FY2023/roe_pct: only 1 bank(s) with a value"
+    },
+    {
+      "stage": "scorecard/skipped",
+      "status": "WARN",
+      "detail": "FY2024/nim_pct: only 1 bank(s) with a value"
+    },
+    {
+      "stage": "sensitivity",
+      "status": "OK",
+      "detail": "10000 draws (seed 42) + flip ranges + simplex grid"
+    },
+    {
+      "stage": "tableau_export",
+      "status": "OK",
+      "detail": "5 CSV(s); .hyper not installed - CSV only"
+    },
+    {
+      "stage": "charts",
+      "status": "OK",
+      "detail": "10 chart(s) -> outputs/charts/"
+    },
+    {
+      "stage": "pdf_probe",
+      "status": "OK",
+      "detail": "21 PDF(s) probed -> outputs/tables/pdf_probe_report.csv"
+    }
+  ],
+  "outputs": {
+    "outputs/tables/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/tables/coverage_report.csv": "c33013c21acea89fc5d64ccc292b95e4aab96bcda50b2dee377c0d03e6382dea",
+    "outputs/tables/dupont.csv": "b2debb1f0801ae05dfc56222825f156e50736d1ff44f50f5f1f3c189a8e618b4",
+    "outputs/tables/extraction_candidates.csv": "d7c89e130c0d1207da68130a1ef6bae6c2c5aa4482ab348b90167246fb467e97",
+    "outputs/tables/extraction_coverage.csv": "c06a958a7799a1dbfff9303f9f7cd89c2197b2ed2feb963f47d924aec1f81ceb",
+    "outputs/tables/icici_manual_entry.csv": "ce1bbeae9744d496a81477237c94999c7cada44412be0cf7c6a04c1f7a92da1f",
+    "outputs/tables/metric_scores.csv": "513e22ed7719d14bcc3d6e9b10b26419ed61950e6721a1895f157ec9ecab4494",
+    "outputs/tables/pdf_probe_report.csv": "3eb1c2e17aa2a12b51e6e7af6957bb57d545294964cb19341f81d0814bf5b87b",
+    "outputs/tables/profit_quality.csv": "a47f7839c4a2481fd930e2b9e3922427ed27673e6aecc43cd102e6cfe57e7794",
+    "outputs/tables/scorecard_primary_FY22_FY26.csv": "4ee6eef6473b260b8823e13655a2bf11fb96bb1cef2419c8e824c49afeafe30b",
+    "outputs/tables/scorecard_summary_merger_clean.csv": "0ab2fb95180883f5f4cde90154341199989721ad9278d2bd2640e060c5c13827",
+    "outputs/tables/scorecard_summary_primary.csv": "fc012f397e57ece8c0668875fa6d1ea552efe10ca0ff2682ae40e1bb1b38229c",
+    "outputs/tables/sensitivity_flip_ranges.csv": "bd3304687504e8c1cb3ab8bf7bb1df5377e0837f8dc9624eb2910d2d9ac0f416",
+    "outputs/tables/sensitivity_simplex_grid.csv": "bab810c29c415178169da6568c55f155f9311558da9afe7751ff7ff945056d5f",
+    "outputs/tables/sensitivity_win_shares.csv": "f041ecf37d874bbde4ac996875b2a40eba9871849051dc80cbc5d4aa59a7d65c",
+    "outputs/tables/trends.csv": "bd9effff3da486d6190d3603049becd48d3c93c13a4d1be235cf956608442788",
+    "outputs/tables/validation_report.csv": "bba140432c76377dff24a01ea3c49159a8f0ed1557f2d86417dfe5f13028bbf9",
+    "outputs/charts/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/charts/coverage_heatmap.png": "46e7d4e301111bf6dd27eaf1f4e8d85b15eff37b15ba38b55bfec3f779bcfe24",
+    "outputs/charts/hero_chart.png": "5d9ff7dedfe46685677f7206f23b56dcbab77c8e84a258f3d431e894030a78d9",
+    "outputs/charts/pillar_asset_quality.png": "473a0094b693396fe46afafba2e155f7f7fc33417f633069989320a5c401ce3f",
+    "outputs/charts/pillar_profit.png": "36fad3c12c067be224617cad8e9c259ad65fd3cdb69ca19422698a3c32a5b33f",
+    "outputs/charts/sensitivity_chart.png": "6b02cc4f2b5b9550dc86cacce0a6e4fb86877b81b1f16f4e85487d5ba29d107b",
+    "outputs/charts/trend_gross_npa_pct.png": "2ea2588f38c8b80521edfb733c1feade034a48d5cb1f00c540c5cf9cb9aef091",
+    "outputs/charts/trend_net_npa_pct.png": "4fde3d1d143ff58be77079ce33bf26c89c5ef50b82a48dc5db193950be006b2f",
+    "outputs/charts/trend_net_profit_inr.png": "165ded3368181c690d22eda8fc1b328860ffdb5af3cd4b74fb4b44f6e3e6ac8a",
+    "outputs/charts/trend_roa_pct.png": "318c6d7060e12960964189faba88a6ce2627ef122b3f38091ed0563cd3057257",
+    "outputs/charts/trend_roe_pct.png": "ebf230b158f5c60e7c16b3bf7b1a5a313ce61f417df7cfc822f3f4305122e122",
+    "outputs/tableau/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/tableau/dim_pillar_weights.csv": "9c867a19dc09becdcdfcbdf58fef41536292ea10e25b406f4c5ef10f2912d681",
+    "outputs/tableau/fact_metrics.csv": "f3819266c410f4e5679f75cd09c5a6dac6e8212bc88d868b08af8b352cba6f9f",
+    "outputs/tableau/fact_overall_scores.csv": "4ee6eef6473b260b8823e13655a2bf11fb96bb1cef2419c8e824c49afeafe30b",
+    "outputs/tableau/fact_scores.csv": "513e22ed7719d14bcc3d6e9b10b26419ed61950e6721a1895f157ec9ecab4494",
+    "outputs/tableau/sens_win_shares.csv": "f041ecf37d874bbde4ac996875b2a40eba9871849051dc80cbc5d4aa59a7d65c"
+  },
+  "library_versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  }
+}

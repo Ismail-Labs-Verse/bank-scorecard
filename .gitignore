@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------------------
+# Bank Scorecard - .gitignore
+# Rule: raw bank/RBI documents are NEVER committed (copyright + file size).
+# Only processed data, the source log, code and docs go to GitHub.
+# ---------------------------------------------------------------------------
+
+# --- Raw source documents (see data/raw/MANUAL_DOWNLOAD_NEEDED.txt) ---
+data/raw/*
+!data/raw/MANUAL_DOWNLOAD_NEEDED.txt
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- macOS ---
+.DS_Store
+._*
+
+# --- Secrets: never commit ---
+.env
+*.pem
+*.key
+credentials.json
+
+# --- Scratch / probes ---
+.probe/
+scratch/
+*.tmp
+*.bak
+
+# --- test / build caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- bulk text extracted from the raw PDFs: derived from copyrighted files,
+#     useful locally, not something to republish ---
+data/processed/_extracted_raw/
+data/processed/text_cache/
