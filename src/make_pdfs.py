@@ -324,21 +324,20 @@ def _memo(styles) -> list:
 
     story.append(Paragraph("Position", styles["h2"]))
     story.append(Paragraph(
-        "<b>ICICI Bank leads the FY2022-FY2026 peer scorecard with a mean score "
-        "of 61.1, against 58.1 for HDFC Bank and 38.4 for State Bank of India.</b> "
-        "The two leaders are strong in different places: ICICI Bank on asset "
-        "quality (77.9 against 55.7 and 35.8) and HDFC Bank on profitability "
-        "(60.1 against 46.4 and 40.7). On the merger-clean window of "
-        "FY2024-FY2026 the same bank leads more comfortably - ICICI 73.1, State "
-        "Bank of India 54.5, HDFC Bank 35.2.", styles["body"]))
+        "<b>HDFC Bank leads the FY2022-FY2026 peer scorecard with a mean score "
+        "of 59.0, against 50.0 for ICICI Bank and 42.1 for State Bank of India.</b> "
+        "It leads on both pillars - asset quality at 62.5 against 46.2 and 43.8, "
+        "and profitability at 55.9 against 53.4 and 40.7 - and a bank that leads "
+        "on every pillar cannot be overturned by reweighting those pillars. On "
+        "the merger-clean window of FY2024-FY2026 the ranking reverses: ICICI "
+        "Bank 61.6, State Bank of India 54.5, HDFC Bank 36.7.", styles["body"]))
     story.append(Paragraph(
-        "The ranking is not an artefact of the chosen weights, but it is "
-        "conditional on them. Re-drawing the pillar weights 10,000 times from a "
-        "uniform distribution over the weight simplex puts ICICI Bank first in "
-        "62.2% of runs and HDFC Bank in 37.8%, while State Bank of India ranks "
-        "third in every single one. The condition is measurable: ICICI Bank "
-        "keeps the lead for any asset-quality weight above 0.28, and raising "
-        "the profit pillar above 0.485 hands it to HDFC Bank.", styles["body"]))
+        "The result is not an artefact of the chosen weights, and here that "
+        "statement is unusually strong. Re-drawing the pillar weights 10,000 "
+        "times from a uniform distribution over the weight simplex puts HDFC "
+        "Bank first in 100.0% of runs, ICICI Bank second in 100.0% and State "
+        "Bank of India third in 100.0%. There is no flip threshold to report "
+        "because no weighting of the two pillars changes the order.", styles["body"]))
     story.append(Paragraph(
         "This is a preliminary release. Ten of the eighty metrics behind the "
         "scorecard have been verified by hand; the remainder are "

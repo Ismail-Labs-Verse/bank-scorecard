@@ -24,6 +24,11 @@ HDFC,FY2023,roe_pct,Return on equity,profit,17.4,pct,0.5,2.9585798816567976,auto
 HDFC,FY2024,roe_pct,Return on equity,profit,16.1,pct,-1.2999999999999972,-7.471264367816078,auto_extracted,HDFC-roe_pct-FY2024--auto
 HDFC,FY2025,roe_pct,Return on equity,profit,14.6,pct,-1.5000000000000018,-9.316770186335411,auto_extracted,HDFC-roe_pct-FY2025--auto
 HDFC,FY2026,roe_pct,Return on equity,profit,14.3,pct,-0.29999999999999893,-2.0547945205479423,auto_extracted,HDFC-roe_pct-FY2026--auto
+ICICI,FY2022,gross_npa_pct,Gross NPA %,asset_quality,3.4,pct,,,manually_corrected,ICICI-gross_npa_pct-FY2022--manual
+ICICI,FY2023,gross_npa_pct,Gross NPA %,asset_quality,2.81,pct,-0.5899999999999999,-17.352941176470583,manually_corrected,ICICI-gross_npa_pct-FY2023--manual
+ICICI,FY2024,gross_npa_pct,Gross NPA %,asset_quality,2.16,pct,-0.6499999999999999,-23.13167259786476,manually_corrected,ICICI-gross_npa_pct-FY2024--manual
+ICICI,FY2025,gross_npa_pct,Gross NPA %,asset_quality,2.07,pct,-0.0900000000000003,-4.166666666666686,manually_corrected,ICICI-gross_npa_pct-FY2025--manual
+ICICI,FY2026,gross_npa_pct,Gross NPA %,asset_quality,2.01,pct,-0.06000000000000005,-2.898550724637683,manually_corrected,ICICI-gross_npa_pct-FY2026--manual
 ICICI,FY2022,net_npa_pct,Net NPA %,asset_quality,0.8,pct,,,ocr_extracted,ICICI-net_npa_pct-FY2022--chart
 ICICI,FY2023,net_npa_pct,Net NPA %,asset_quality,0.5,pct,-0.30000000000000004,-37.5,ocr_extracted,ICICI-net_npa_pct-FY2023--chart
 ICICI,FY2024,net_npa_pct,Net NPA %,asset_quality,0.4,pct,-0.09999999999999998,-19.999999999999996,ocr_extracted,ICICI-net_npa_pct-FY2024--chart
@@ -42,7 +47,8 @@ ICICI,FY2026,nim_pct,Net interest margin,profit,4.32,pct,0.0,0.0,ocr_extracted,I
 ICICI,FY2022,roa_pct,Return on assets,profit,1.65,pct,,,manually_corrected,ICICI-roa_pct-FY2022--manual
 ICICI,FY2023,roa_pct,Return on assets,profit,2.01,pct,0.3599999999999999,21.818181818181802,manually_corrected,ICICI-roa_pct-FY2023--manual
 ICICI,FY2024,roa_pct,Return on assets,profit,2.18,pct,0.17000000000000037,8.457711442786087,manually_corrected,ICICI-roa_pct-FY2024--manual
-ICICI,FY2026,roa_pct,Return on assets,profit,2.11,pct,-0.07000000000000028,-3.2110091743119407,manually_corrected,ICICI-roa_pct-FY2026--manual
+ICICI,FY2025,roa_pct,Return on assets,profit,2.51,pct,0.3299999999999996,15.13761467889907,manually_corrected,ICICI-roa_pct-FY2025--manual
+ICICI,FY2026,roa_pct,Return on assets,profit,2.11,pct,-0.3999999999999999,-15.936254980079678,manually_corrected,ICICI-roa_pct-FY2026--manual
 ICICI,FY2022,roe_pct,Return on equity,profit,13.69,pct,,,manually_corrected,ICICI-roe_pct-FY2022--manual
 ICICI,FY2023,roe_pct,Return on equity,profit,15.89,pct,2.200000000000001,16.070124178232305,manually_corrected,ICICI-roe_pct-FY2023--manual
 ICICI,FY2024,roe_pct,Return on equity,profit,17.15,pct,1.259999999999998,7.929515418502198,manually_corrected,ICICI-roe_pct-FY2024--manual

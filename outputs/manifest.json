@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-10T11:39:50Z",
-  "runtime_seconds": 27.51,
+  "generated_utc": "2026-10-10T11:50:36Z",
+  "runtime_seconds": 28.08,
   "blocked": false,
   "python": "3.12.15",
   "platform": "macOS-27.0.1-arm64-arm-64bit",
@@ -41,7 +41,7 @@
     {
       "stage": "metrics_trends",
       "status": "OK",
-      "detail": "74 rows -> outputs/tables/trends.csv"
+      "detail": "80 rows -> outputs/tables/trends.csv"
     },
     {
       "stage": "dupont",
@@ -56,7 +56,7 @@
     {
       "stage": "scorecard",
       "status": "OK",
-      "detail": "primary window winner: ICICI; 15 bank-year rows"
+      "detail": "primary window winner: HDFC; 15 bank-year rows"
     },
     {
       "stage": "scorecard/data_limitation",
@@ -111,40 +111,40 @@
   ],
   "outputs": {
     "outputs/tables/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "outputs/tables/coverage_report.csv": "cf64facee882a9ba5c4ada70daaeda2c2c0a76e1558c48277b8cdac3fb247e4a",
-    "outputs/tables/dupont.csv": "2de963c317256f8fd1eef0dc9de41051dc3ce78e6cf6371bdab02c619d1bc153",
+    "outputs/tables/coverage_report.csv": "8756e531cb61a21438799d72aea8a0682c0c0c2804555052411ac5dfcf53ee47",
+    "outputs/tables/dupont.csv": "e662b24929b1ff5e136634fcaab893d74695e4397f64b350c7b3773d137eb576",
     "outputs/tables/extraction_candidates.csv": "d7c89e130c0d1207da68130a1ef6bae6c2c5aa4482ab348b90167246fb467e97",
     "outputs/tables/extraction_coverage.csv": "c06a958a7799a1dbfff9303f9f7cd89c2197b2ed2feb963f47d924aec1f81ceb",
     "outputs/tables/icici_manual_entry.csv": "ce1bbeae9744d496a81477237c94999c7cada44412be0cf7c6a04c1f7a92da1f",
-    "outputs/tables/metric_scores.csv": "bf99dc655a97a41aaa2ebaf368d1602908b9fa5e58468d50c91838240d3d0720",
+    "outputs/tables/metric_scores.csv": "9127b7e4ad02b897b7ab7b2d9e589d91ae6cb1a984f96518d6938d9654efa96d",
     "outputs/tables/missing_data_report.csv": "8fd33e415469b68ae8c70c360e98b0e517db5b07a99b7d9c733f5034e4cad00c",
     "outputs/tables/pdf_probe_report.csv": "3eb1c2e17aa2a12b51e6e7af6957bb57d545294964cb19341f81d0814bf5b87b",
     "outputs/tables/profit_quality.csv": "70c14fdbbc8db11ce33aa675b8988d2f916626576ee9aada89a4aea8c82d8d6c",
-    "outputs/tables/scorecard_primary_FY22_FY26.csv": "c6d8cb4cae447a4f1d99504ca801d9b746a7c1cc01dfbc968c44b38b15433f8c",
-    "outputs/tables/scorecard_summary_merger_clean.csv": "856fa7b5885649a19c95c3e7a0d16859ef0d8853de639b0212779a90bf415d58",
-    "outputs/tables/scorecard_summary_primary.csv": "ae55e7d994cce4a0b34039713143c8a25465022eedd30f4cc35c753cc80c0ab0",
-    "outputs/tables/sensitivity_flip_ranges.csv": "0409b2aa912ae2d6223d8dab35c4ca248f626ee041737f797b3def64b5e70fcd",
-    "outputs/tables/sensitivity_simplex_grid.csv": "b2b857191786b56de46d1c575c12ed5dcb301c5969e8d9b164acf563745d6aae",
-    "outputs/tables/sensitivity_win_shares.csv": "3b3d946134e052ab46acc1d3b05d5a1858772116d4b883b60e428f82b7c75b81",
-    "outputs/tables/trends.csv": "b2d270774db8182a858916adf4c535ce6525b8e7a754dff06f3727d72efb1b69",
+    "outputs/tables/scorecard_primary_FY22_FY26.csv": "ba2b432300adcee853855da6f7d2292e9a26f43d35844c00a5d930f657e8e8b0",
+    "outputs/tables/scorecard_summary_merger_clean.csv": "76090da1c1861a19f051997e502e9f58146aa2acfffa2f54e40789c1ef53670c",
+    "outputs/tables/scorecard_summary_primary.csv": "9f95eb08bd19277d3aa8ece6c07107b601213b5d49bc3f995bd3a70c91cb1401",
+    "outputs/tables/sensitivity_flip_ranges.csv": "4a9177c997590d432a9552a6f98625427347cdd1dcd5465ff0560ba18aa7e2b0",
+    "outputs/tables/sensitivity_simplex_grid.csv": "8751d198e13e83d50b3c141164a162f6804e7d21158e52cb8b2cb6251c6cd7b9",
+    "outputs/tables/sensitivity_win_shares.csv": "4c79eddf9b1d2154353ea5f65597fcc47cc0599181ab0b3f1ac4da2af8beaad3",
+    "outputs/tables/trends.csv": "02c1bab28b2efe871692c35985daec853e571dc154f663f0c3ee1d412a580d65",
     "outputs/tables/validation_report.csv": "bba140432c76377dff24a01ea3c49159a8f0ed1557f2d86417dfe5f13028bbf9",
     "outputs/charts/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "outputs/charts/coverage_heatmap.png": "cfe569fd1556ecd270eb114b8b1b3ce859d8594e087ad9bb9f03363c580523a2",
-    "outputs/charts/hero_chart.png": "a8c906980222e4390229666360f6dab865e83d79691183d8048ae4c380197710",
-    "outputs/charts/pillar_asset_quality.png": "f2751a522593b95b563556ec0bb6c6890f93c232c048f0781ce744319250ab01",
-    "outputs/charts/pillar_profit.png": "9db2aef43e9c18180c9e8265b2be85b53a7a1d76cc8ae6257776413b91cd8075",
-    "outputs/charts/sensitivity_chart.png": "fa63ca8122313710f04ab16a123db7304d4149a4d00c6cf4fb36afb972fe72c0",
-    "outputs/charts/trend_gross_npa_pct.png": "8c0a1a287d997f7fa3967b89d74935f27c29af52b2519a6120bfd791d5dd43ff",
+    "outputs/charts/hero_chart.png": "27cae67d3a01e29f0d16e2b0131a8ea863641307fcb666255e3c48d5d213b54c",
+    "outputs/charts/pillar_asset_quality.png": "92c9785111abbc3f21a3b34722cb5f06f0d4fe5885d966afe999f3cfd0b89c76",
+    "outputs/charts/pillar_profit.png": "6c6954c6f5bcff5a7b81e2a20a46f56dcd959d60db411c5bf2f7b6b4971289f4",
+    "outputs/charts/sensitivity_chart.png": "4ab963d08a56dc116a31584d7d060e70573da7243fa78b6800d1b16ad18df422",
+    "outputs/charts/trend_gross_npa_pct.png": "928812e80d75655252bb2e9eee3829601a704e844f647c1e72aaef281aa5cb7f",
     "outputs/charts/trend_net_npa_pct.png": "19b6affff9525991f428f30bd8a946bd0b244796538d3962385618f3af5b8bfe",
     "outputs/charts/trend_net_profit_inr.png": "0c21ffd0909fa3f6424f102aa01ffeb7fd1ffb966bb70c5243b7e00d61205a16",
-    "outputs/charts/trend_roa_pct.png": "1bed72f5b02ff9ea69f513bacf3c7e05bfacde253f4035a39ca456fb64dcaa15",
+    "outputs/charts/trend_roa_pct.png": "8fae9bf5d6d24890bdddd4429f0d21baedb3520a71ddc94a48b52635c47e9973",
     "outputs/charts/trend_roe_pct.png": "df12d61437204dc39c3c9e6d659e3809fd4a3ff1084390510bbd5b525f4e515f",
     "outputs/tableau/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "outputs/tableau/dim_pillar_weights.csv": "9c867a19dc09becdcdfcbdf58fef41536292ea10e25b406f4c5ef10f2912d681",
-    "outputs/tableau/fact_metrics.csv": "d528ca46b0509c66356945d39fa43f0252a7901577038908db1cb71da0758f9a",
-    "outputs/tableau/fact_overall_scores.csv": "c6d8cb4cae447a4f1d99504ca801d9b746a7c1cc01dfbc968c44b38b15433f8c",
-    "outputs/tableau/fact_scores.csv": "bf99dc655a97a41aaa2ebaf368d1602908b9fa5e58468d50c91838240d3d0720",
-    "outputs/tableau/sens_win_shares.csv": "3b3d946134e052ab46acc1d3b05d5a1858772116d4b883b60e428f82b7c75b81"
+    "outputs/tableau/fact_metrics.csv": "a490261e1e84094a72038e00f11057d3fbc9b30739616a5b93d71418fd06f85d",
+    "outputs/tableau/fact_overall_scores.csv": "ba2b432300adcee853855da6f7d2292e9a26f43d35844c00a5d930f657e8e8b0",
+    "outputs/tableau/fact_scores.csv": "9127b7e4ad02b897b7ab7b2d9e589d91ae6cb1a984f96518d6938d9654efa96d",
+    "outputs/tableau/sens_win_shares.csv": "4c79eddf9b1d2154353ea5f65597fcc47cc0599181ab0b3f1ac4da2af8beaad3"
   },
   "library_versions": {
     "pandas": "2.3.3",
